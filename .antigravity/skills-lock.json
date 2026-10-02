@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "angular-best-practices-primeng": {
+      "source": "alfredoperez/angular-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/angular-best-practices-primeng/SKILL.md",
+      "computedHash": "65b76cc174bb87c2725de2d24e67e61e84637ebb1e79ad170fdb37b5301c8367"
+    }
+  }
+}

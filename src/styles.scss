@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'tailwindcss';
+@use 'primeicons/primeicons.css';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 800px;
+  min-height: 100%;
+  overflow-x: auto;
+}

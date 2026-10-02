@@ -1,0 +1,27 @@
+footer {
+    text-align: right;
+}
+.min-card {
+  min-width: 640px;
+}
+.grid-container {
+  padding: 0 10%;
+  max-width: 2560px;
+}
+
+.card-no-padding {
+  overflow: hidden;
+
+  ::ng-deep {
+    .p-card-body,
+    .p-card-content {
+      padding: 0 !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    .min-card  {
+        min-width: 0;
+    }
+}

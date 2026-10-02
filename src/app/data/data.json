@@ -1,0 +1,363 @@
+{
+  "summary": "I have over 19 years of experience in software development, primarily as a .NET Developer. I am experienced in creating technical documentation, designing and developing new functionality, building integration solutions, maintaining, refactoring, and extending existing code, as well as software testing across both on-premises and cloud (Azure) environments, spanning backend and frontend technologies. I am skilled in MS SQL query optimisation. I am focused on full-stack development and comfortable taking on leadership roles within projects. I use AI tools, including Claude, to improve my work and productivity. I am a team player, open-minded, and willing to share my knowledge with others.",
+  "experience": [
+    {
+      "company": "Guest TEK",
+      "icon": 1,
+      "seniority": "3  months",
+      "date": "2007",
+      "position": "TIER 1 SUPPORT AGENT",
+      "projects": [
+        {
+          "name": "Tech Support",
+          "displayName": "Tech\nSupport",
+          "description": [
+            "Call center support agent"
+          ],
+          "tasks": [
+            "Fixing technical/software issues with customers Internet access"
+          ],
+          "technology" : null
+        }
+      ]
+    },
+
+    {
+      "company": "Asseco Poland S.A.",
+      "icon": 2,
+      "seniority": "2 years",
+      "date": "2007-2009",
+      "position": "COBOL DEVELOPER",
+      "projects": [
+        {
+          "name": "PKO BP S.A.",
+          "displayName": "PKO BP\nS.A.",
+          "description": [
+            "Implementation of the Alnova System (main transactional system) for PKO BP S.A.",
+            "Business Partner: polish bank PKO BP .S.A."
+          ],
+          "tasks": [
+            "Designing: High Level (business) and Data Designs (technical)",
+            "Software development (JCL, Cobol, DB2)",
+            "Document management (MS SharePoint)",
+            "Testing and bug fixing",
+            "Adjusting Application and DB Performance"
+          ],
+          "technology" : "JCL, Cobol, DB2, SharePoint"
+        }
+      ]
+    },
+
+    {
+      "company": "Asseco Business Solutions S.A.",
+      "icon": 3,
+      "seniority": "5 years",
+      "date": "2009-2015",
+      "position": "DEVELOPER",
+      "projects": [
+        {
+          "name": "Asseco Faktor",
+          "displayName": "Asseco\nFaktor",
+          "description": [
+            "Development of Invoice Factoring Application",
+            "Business Partners: Millenium Bank, BOŚ, BPS, Deutche Bank, Raiffeisen Bank, Pekao S.A."
+          ],
+          "tasks": [
+            "Software development (PowerBuilder 10, MSSQL)",
+            "Creating integration platforms (C#, CLR functions, WCF)",
+            "Creating documentation",
+            "Testing and bug fixing",
+            "Maintenance of existing code",
+            "Adjusting Application and DB Performance"
+          ],
+          "technology" : "PowerBuilder 10, MSSQL (2005-2008), C#, CLR functions, WCF"
+        },
+        {
+          "name": "Mobile Touch",
+          "displayName": "Mobile\nTouch",
+          "description": [
+            "Development of SFA/CRM application",
+            "Business Partners: Nestle, Mondelez International, Lotte Wedel, Tchibo, Hortex Holding"
+          ],
+          "tasks": [
+            "Development of company common platform (NeoN)",
+            "Based on NeoN development of business specific products like Mobile Touch, Invoice Factor",
+            "Testing and bug fixing",
+            "Adjusting Application and DB Performance"
+          ],
+          "technology" : "C#, .NET 4.5, WCF, Silverlight, MSSQL (2008-2014), Entity Framework"
+        }
+      ]
+    },
+
+    {
+      "company": "SII Poland",
+      "icon": 4,
+      "seniority": "6 years",
+      "date": "2015-2021",
+      "position": "SENIOR .NET DEVELOPER",
+      "projects": [
+        {
+          "name": "Pekao S.A.",
+          "displayName": "Pekao\nS.A.",
+          "description": [
+            "ModulGF – tax document registration management",
+            "Stawki – automatization of reference rates computation",
+            "EPU – communication management and integration between Bank and e-Court",
+            "Full Stack development"
+          ],
+          "tasks": [
+            "Software development",
+            "Creating documentation",
+            "Testing and bug fixing",
+            "Maintenance of existing code",
+            "Adjusting Application and DB Performance"
+          ],
+          "technology" : "C#, .NET (4.0), MVC, jQuery, JSON, HTML, CSS, Razor, Rest API, MSSQL (2012), Entity Framework"
+        },
+        {
+          "name": "PKN Orlen",
+          "displayName": "PKN\nOrlen",
+          "description": [
+            "eHurt, oneHurt – electronic service for wholesale petrol and asphalt products",
+            "Full Stack development"
+          ],
+          "tasks": [
+            "Software development",
+            "Migrating existing functionalities to new platform",
+            "Testing and bug fixing",
+            "Designing new functionalities"
+          ],
+          "technology" : "C#, .NET (4.6), .NET Core (starting from beta => 2.0), Angular 2 (beta => final 2.0), MVC, TypeScript, JavaScript, jQuery, HTML, CSS, PrimeNG, Bootstrap, JSON, MSSQL 2012, Entity Framework"
+        },
+        {
+          "name": "Hoist Finance",
+          "displayName": "Hoist\nFinance",
+          "description": [
+            "Supporting customer DEV team",
+            "Cooperating directly with Germany branch"
+          ],
+          "tasks": [
+            "Creating dedicated integration functionalities between customer systems",
+            "Creating tools for processing OpenOffice template files",
+            "Analysing existing code for documentation purposes"
+          ],
+          "technology" : "C#, .NET (4.6), OpenXML, OpenOffice"
+        },
+        {
+          "name": "SII Notifier",
+          "displayName": "SII\nNotifier",
+          "description": [
+            "Creating web application for managing company resources (workers, working time, projects)",
+            "The main goal of this project was to train students (interns) who were participating in SII action LAT (Summer Talent Academy)",
+            "As a Team Leader I was responsible for train interns in new technologies,  project standards and provide them good work experience in real-life project",
+            "After the training all trainees were employed by SII",
+            "Full Stack project"
+          ],
+          "tasks": [
+            "Gathering business requirements",
+            "Designing solution architecture",
+            "Training interns",
+            "Creating progress reports"
+          ],
+          "technology" : "C#, .NET Core (2.0), Angular (6), MVC, TypeScript, RxJS, HTML, SCSS,  JSON, PrimeNg, Nebular, Entity Framework, Azure DB, Azure (CI/CD on DevOps, App Services, AAD)"
+        },
+        {
+          "name": "ABB",
+          "displayName": "ABB",
+          "description": [
+            "MXP Self Service – creating web application which helps maintain ships turbocharges"
+          ],
+          "tasks": [
+            "Software development",
+            "Testing and bug fixing"
+          ],
+          "technology" : "C#, .NET (4.6), MVC, Rest API, XML"
+        },
+        {
+          "name": "Gyldendal",
+          "displayName": "Gyldendal",
+          "description": [
+            "Creating library used for transforming law files written in xml into new format",
+            "Working directly with business Customer"
+          ],
+          "tasks": [
+            "Software development",
+            "Testing and bug fixing",
+            "Responsible for all communication with Customer",
+            "Gathering business requirements from the Customer and preparing needed documentation"
+          ],
+          "technology" : "C#, .NET Standard, XML"
+        },
+        {
+          "name": "Ingenico",
+          "displayName": "Ingenico",
+          "description": [
+            "Creating web app for maintaining payment terminals",
+            "Full Stack development"
+          ],
+          "tasks": [
+            "Software development",
+            "Testing and bug fixing"
+          ],
+          "technology" : "C#, .NET Core (2.1), Angular (5), MVC, TypeScript, RxJS, JavaScript, jQuery, HTML, CSS,  Bootstrap, JSON, MSSQL (2016), Entity Framework, Azure (CI/CD with DevOps, App Services)"
+        },
+        {
+          "name": "Bilpoolen",
+          "displayName": "Bilpoolen",
+          "description": [
+            "Maintaining web app for car-sharing company",
+            "Full Stack development"
+          ],
+          "tasks": [
+            "Software development (mainly maintenance)",
+            "Testing and bug fixing"
+          ],
+          "technology" : "C#, .NET (4.5), MVC, TypeScript, JavaScript, jQuery, HTML, CSS,  Bootstrap, JSON, MSSQL (2012), Entity Framework"
+        },
+        {
+          "name": "SII Spot",
+          "displayName": "SII\nSpot",
+          "description": [
+            "Creating web application for managing parking lots in one of the SII Offices",
+            "This project was designed and created by me when I was in between projects as a free time filler",
+            "Full Stack development"
+          ],
+          "tasks": [
+            "Gathering business requirements",
+            "Designing solution architecture",
+            "Development and bugfixes"
+          ],
+          "technology" : "C#, .NET Core (3.0), Angular (8), MVC, TypeScript, RxJS, NgRx, HTML, SCSS,  JSON, Material Design, Azure (CI/CD with DevOps, Azure App Services, Azure Storage)"
+        },
+        {
+          "name": "Leica Geosystems",
+          "displayName": "Leica\nGeosys.",
+          "description": [
+            "BLK3D Web – creating web application for measurement of objects on images",
+            "Full Stack development"
+          ],
+          "tasks": [
+            "Software development",
+            "Testing and bug fixing"
+          ],
+          "technology" : "C#, .NET Core (2.2), Angular (7), MVC, TypeScript, RxJS, NgRx, HTML, SCSS, Material Design, JSON, Azure Storage , Azure (CI/CD with DevOps, App Services)"
+        },
+        {
+          "name": "10x Psychology",
+          "displayName": "10x\nPsych.",
+          "description": [
+            "10xDashboard/10xAssesment – creating web application managing/improving people performance in the workplace",
+            "Creating migration services using Azure Data Factory"
+          ],
+          "tasks": [
+            "Software development",
+            "Creating mechanism for templating Interview Guides (OpenXml)",
+            "Creating Disaster Recovery mechanism (backups and restoration of business data and services)",
+            "Testing and bug fixing",
+            "Improving application performance",
+            "Implementing Azure B2C Authentication as alternative authorisation method",
+            "Creating data migrations with Azure Data Factory"
+          ],
+          "technology" : "C#, .Net (4.8), .NET Core (2.2/3.1), MSSQL, Word.Interop, OpenXml, Azure DevOps CI/CD, Azure (Data Factory, Key Vault, App Service (+ slots), Function App, Logic App, SQL Server, Storage (Blobs/Tables/Queues), Virtual Machine, Active Directory (B2C), Application Insights, Arm Templates)"
+        }
+      ]
+    },
+
+    {
+      "company": "Shimi",
+      "icon": 5,
+      "seniority": "> 4 year",
+      "date": "2021-2026",
+      "position": "LEADER/SENIOR .NET DEVELOPER",
+      "projects": [
+        {
+          "name": "London Market Insurence Company",
+          "displayName": "London Market\nInsurence Co.",
+          "description": [
+            "Migrating policy data; creating integration between customer and external systems"
+          ],
+          "tasks": [
+            "Preparing solution architecture",
+            "Business analysis",
+            "Team leading",
+            "Software development",
+            "Preparing documentation",
+            "Performing analysis of existing customer applications"
+          ],
+          "technology" : "C#, .NET (6.0), Snowflake, MSSQL, IaC: Terraform + CI/CD with DevOps, Azure hosted ( Data Factory + SHIR, Service Bus, Function App, VNET integration, NoSQL (Storage Account), APIM, Front Door, OAuth2 + Azure AD), small episode with Angular 6 "
+        },
+        {
+          "name": "London Market Insurence Company",
+          "displayName": "London Market\nInsurence Co.",
+          "description": [
+            "Migrating insurance documents (sourced from internal storage, SQL binaries) to SharePoint"
+          ],
+          "tasks": [
+            "Preparing solution architecture",
+            "Working with infosec team to ensure security and compliance of the solution",
+            "Business analysis",
+            "Software development",
+            "Preparing documentation",
+            "Performing analysis of existing internal applications and storage solutions",
+            "SharePoint integration (PnP Framework)"
+          ],
+          "technology" : "C#, .NET (6.0), Intranet storage, MSSQL, SharePoint (PnP Framework), OpenXml (preparing reporting tool)"
+        },
+        {
+          "name": "London Market Insurence Company",
+          "displayName": "London Market\nInsurence Co.",
+          "description": [
+            "Creating policy/claim management application"
+          ],
+          "tasks": [
+            "Preparing solution architecture",
+            "Event-Driven architecture design and implementation (Azure Service Bus, Azure Function App)",
+            "Working with infosec team to ensure security and compliance of the solution",
+            "Working directly with business analytics to gather business requirements",
+            "Software development",
+            "Preparing documentation",
+            "Performing analysis of existing internal applications (data sourcing)",
+            "Code migration to latest framework versions",
+            "Creating integration API's (.Net Http-based endpoints), Function App, APIM",
+            "SharePoint integration (Graph API)",
+            "User account management (Azure AD, OAuth2, OpenID Connect, Graph API)",
+            "Creating deterministic indexation mechanism for SharePoint documents"
+          ],
+          "technology" : "C#, .NET (10.0), Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool)"
+        }
+      ]
+    }
+
+  ],
+  "certificates": [
+    "Advanced DB SQL (IBM)",
+    "Project management – Prince 2",
+    "MS-10262 Developing Windows Applications with Microsoft Visual Studio 2010 [WPF, ASP.NET]",
+    "TELC Certificate in English B1"
+  ],
+  "courses": [
+    "Advanced MS SQL",
+    "T-SQL tuning and performance",
+    "Microsoft Azure Architecture – AZ300 & AZ301",
+    "Kubernetes",
+    "Advanced Angular 7",
+    "C# Programming (.NET 4.0/4.5, Silverlight, WCF)",
+    "Design patterns in C",
+    "Domain-Driven Design",
+    "Advanced JavaScript",
+    "Control-M, CICS, JCL, COBOL, DB2",
+    "Advanced DB SQL (IBM)"
+  ],
+  "languages": [
+    "English - Advanced",
+    "German – Basic",
+    "Swedish - Basic"
+
+  ],
+  "passions": [
+    "Family - as in past the work & programming was my biggest passion, nowadays my biggest passion and love is my Family, which fulfils my every free moment of life",
+    "Volleyball - I guess it's the last activity which I can effort to take (because of Family)",
+    "Sense of humour - it's always good to slightly bright up our working day"
+  ]
+}

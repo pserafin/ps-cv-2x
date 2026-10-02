@@ -1,12 +1,15 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { PsMain } from './components/ps-main/ps-main';
+import { PsMainBackground } from './components/ps-main-background/ps-main-background';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.scss',
+  imports: [PsMain, PsMainBackground],
   templateUrl: './app.html',
+  styleUrl: './app.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
-  protected readonly title = signal('ps-cv-2x');
+  protected readonly title = signal('CV - Paweł Serafin');
+
 }
