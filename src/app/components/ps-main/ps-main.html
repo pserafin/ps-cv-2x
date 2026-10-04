@@ -1,18 +1,32 @@
 
-<div class="grid grid-cols-12 gap-8 mx-auto grid-container">
-    <p-card class="col-span-12 3xl:col-span-6 min-card card-no-padding">
-      <ps-main-image/>
-    </p-card>
-    <p-card class="col-span-12 3xl:col-span-6 min-card">
-      some content 2
-    </p-card>
-    <p-card class="col-span-12 3xl:col-span-6 min-card">
-      some content 3
-    </p-card>
-    <p-card class="col-span-12 3xl:col-span-6 min-card">
-      some content 4
-    </p-card>
-    <footer class="col-span-12">
+<div class="flex flex-col 3xl:grid 3xl:grid-cols-2 gap-8 mx-auto grid-container 3xl:items-start">
+    <!-- Left Column on 2-col, unwrapped on 1-col -->
+    <div class="contents 3xl:flex 3xl:flex-col 3xl:gap-8">
+      <p-card class="min-card card-no-padding w-full order-1">
+        <ps-main-image/>
+      </p-card>
+      <p-card class="min-card w-full order-3" header="Technology Stack">
+        <ps-main-technology/>
+      </p-card>
+      <p-card class="min-card w-full order-5">
+        some content 5
+      </p-card>
+    </div>
+
+    <!-- Right Column on 2-col, unwrapped on 1-col -->
+    <div class="contents 3xl:flex 3xl:flex-col 3xl:gap-8">
+      <p-card class="min-card w-full order-2" header="Summary">
+        <ps-main-summary [data]="model().summary"/>
+      </p-card>
+      <p-card class="min-card w-full order-4">
+        some content 4
+      </p-card>
+      <p-card class="min-card w-full order-6">
+        some content 6
+      </p-card>
+    </div>
+
+    <footer class="order-last col-span-1 3xl:col-span-2">
       Copyright&nbsp;©&nbsp;2026&nbsp;Paweł&nbsp;Serafin
     </footer>
 </div>

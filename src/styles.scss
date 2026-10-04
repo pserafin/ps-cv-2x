@@ -17,3 +17,15 @@ body {
   min-height: 100%;
   overflow-x: auto;
 }
+
+.p-card-title {
+  text-align: center;
+}
+
+.card-no-padding {
+  overflow: hidden;
+  .p-card-body,
+  .p-card-content {
+    padding: 0 !important;
+  }
+}

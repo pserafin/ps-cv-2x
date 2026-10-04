@@ -2,11 +2,13 @@ import { ChangeDetectionStrategy, Component, signal, computed } from '@angular/c
 import { Cv } from '../../data/models';
 import { Card } from 'primeng/card';
 import { PsMainImage } from '../ps-main-image/ps-main-image';
+import { PsMainSummary } from '../ps-main-summary/ps-main-summary';
+import { PsMainTechnology } from '../ps-main-technology/ps-main-technology';
 import cvData from '../../data/data.json';
 
 @Component({
   selector: 'ps-main',
-  imports: [Card, PsMainImage],
+  imports: [Card, PsMainImage, PsMainSummary, PsMainTechnology],
   templateUrl: './ps-main.html',
   styleUrl: './ps-main.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
