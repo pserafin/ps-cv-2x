@@ -206,3 +206,26 @@
   width: 60px!important;
 }
 
+@media screen and (min-width: 1079px) {
+    .hide-ai-col-1  {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2118px) {
+    .hide-ai-col-1 {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .hide-ai-col-2  {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2118px) {
+    .hide-ai-col-2 {
+        display: none;
+    }
+}
