@@ -1,0 +1,14 @@
+:host ::ng-deep {
+  .p-steppanel[data-p-active="true"] .p-motion {
+    display: grid !important;
+    --height: auto !important;
+  }
+  .p-steppanel:not([data-p-active="true"]) .p-motion {
+    display: none !important;
+  }
+  .p-steppanel-content div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
