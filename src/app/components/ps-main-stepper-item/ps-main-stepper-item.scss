@@ -1,0 +1,38 @@
+h6 {
+  font-size: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #8f9bb3;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 12px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-icon {
+  max-width: 204px;
+}
+
+.project-name {
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.project-desc,
+.project-task,
+.project-tech {
+  padding-bottom: 12px;
+}
+
+li:hover {
+  text-shadow: 2px 2px 8px #DD0031;
+  cursor: default;
+}

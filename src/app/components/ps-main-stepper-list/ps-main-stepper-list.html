@@ -1,0 +1,78 @@
+@if(data().length == 1) {
+  <ps-main-stepper-item [data]="data()[0]" [position]="position()" [icon]="icon()" />
+}
+@if(data().length > 1) {
+<!-- <p-stepper [(value)]="activeStep" class="indigo-stepper" styleClass="indigo-stepper">
+  @for(item of data(); track item.name; let i = $index ) {
+    <p-step-item [value]="i+1">
+        <p-step>{{item.name}}</p-step>
+        <p-step-panel>
+            <ng-template #content let-activateCallback="activateCallback">
+                <div class="flex flex-col w-full">
+                    <div class="p-card p-4 w-full">
+                      <ps-main-stepper-item [data]="item" [position]="position()" [icon]="icon()"/>
+                    </div>
+                </div>
+                <div class="py-5 gap-2">
+                  @if (i > 0) {
+                    <button type="button" pButton severity="secondary" (click)="activateCallback(i)">Back</button>
+                  }
+                  @if (i < data().length - 1) {
+                    <button type="button" pButton (click)="activateCallback(i+2)">Next</button>
+                  }
+                </div>
+            </ng-template>
+        </p-step-panel>
+    </p-step-item>
+  }
+  </p-stepper> -->
+
+
+            <!-- Inner stepper, independent state -->
+            <p-stepper [(value)]="activeStep" class="inner-stepper indigo-stepper">
+              <p-step-list>
+                <p-step [value]="1">Network</p-step>
+                <p-step [value]="2">Storage</p-step>
+                <p-step [value]="3">Review</p-step>
+              </p-step-list>
+
+              <p-step-panels>
+                <p-step-panel [value]="1">
+                  <ng-template #content let-activateCallback="activateCallback">
+                    <div class="flex flex-col gap-2 p-4">
+                      <label>Subnet</label>
+                      <input pInputText placeholder="10.0.0.0/24" />
+                    </div>
+                    <div class="py-5 gap-2">
+                      <button type="button" pButton (click)="activateCallback(2)">Next</button>
+                    </div>
+                  </ng-template>
+                </p-step-panel>
+
+                <p-step-panel [value]="2">
+                  <ng-template #content let-activateCallback="activateCallback">
+                    <div class="flex flex-col gap-2 p-4">
+                      <label>Volume size (GB)</label>
+                      <input pInputText type="number" placeholder="100" />
+                    </div>
+                    <div class="py-5 gap-2">
+                      <button type="button" pButton severity="secondary" (click)="activateCallback(1)">Back</button>
+                      <button type="button" pButton (click)="activateCallback(3)">Next</button>
+                    </div>
+                  </ng-template>
+                </p-step-panel>
+
+                <p-step-panel [value]="3">
+                  <ng-template #content let-activateCallback="activateCallback">
+                    <div class="p-4">
+                      <p>Review your settings, then continue to the outer step.</p>
+                    </div>
+                    <div class="py-5 gap-2">
+                      <button type="button" pButton severity="secondary" (click)="activateCallback(2)">Back</button>
+                    </div>
+                  </ng-template>
+                </p-step-panel>
+              </p-step-panels>
+            </p-stepper>
+}
+

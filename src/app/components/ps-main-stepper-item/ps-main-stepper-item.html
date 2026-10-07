@@ -1,0 +1,43 @@
+<div class="project-container">
+  <div class="project-item">
+    <div class="project-icon">
+      <ps-icon-picker [icon]="icon()"></ps-icon-picker>
+    </div>
+    <div class="project-name">
+      <h5>{{position()}}</h5>
+      <h6>Project: <span class="default-color">{{data().name}}</span></h6>
+    </div>
+  </div>
+  <div class="project-details">
+    <div class="project-desc">
+      <h6>Project description:</h6>
+      <ul>
+        @for(item of data().description; track item) {
+        <li>
+          <span class="">{{item}}</span>
+        </li>
+        }
+      </ul>
+    </div>
+    <div class="project-tasks">
+      <h6>Tasks and responsibilities:</h6>
+      <ul>
+        @for(item of data().tasks; track item) {
+        <li>
+          <span class="">{{item}}</span>
+        </li>
+        }
+      </ul>
+    </div>
+    @if (data().technology != null && data().technology) {
+      <div class="project-tech">
+        <h6>Technology Stack:</h6>
+        <ul>
+          <li>
+            <span class="">{{data().technology}}</span>
+          </li>
+        </ul>
+      </div>
+    }
+  </div>
+</div>

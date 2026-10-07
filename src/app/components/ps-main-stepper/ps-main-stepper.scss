@@ -3,10 +3,17 @@
     display: grid !important;
     --height: auto !important;
   }
+  .p-steppanel[data-p-active="true"] .p-card {
+    background-color: #F5FDF9;
+  }
+  .p-step[data-p-active="true"] button span {
+    font-weight: bold;
+    color: var(--p-teal-800);
+  }
   .p-steppanel:not([data-p-active="true"]) .p-motion {
     display: none !important;
   }
-  .p-steppanel-content div:last-of-type {
+  .p-steppanel-content > div:last-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
