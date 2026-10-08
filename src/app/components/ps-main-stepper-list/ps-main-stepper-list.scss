@@ -2,6 +2,10 @@
 .indigo-stepper,
 p-stepper {
   // PrimeNG Primary Palette - Indigo (Aura design tokens)
+  --p-primary-5: #fdfeff;
+  --p-primary-10: #fcfcff;
+  --p-primary-15: #fafbff;
+  --p-primary-25: #f7f9ff;
   --p-primary-50: #eef2ff;
   --p-primary-100: #e0e7ff;
   --p-primary-200: #c7d2fe;
@@ -99,6 +103,14 @@ p-stepper {
     .p-stepitem:has(~ .p-stepitem-active) .p-stepper-separator,
     .p-step:has(~ .p-step-active) .p-stepper-separator {
       background: var(--p-primary-color);
+    }
+
+    .p-button-secondary {
+      background: var(--p-primary-50);
+    }
+
+    .p-steppanel {
+      background-color: #fdfeff;
     }
   }
 

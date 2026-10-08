@@ -4,7 +4,7 @@
     --height: auto !important;
   }
   .p-steppanel[data-p-active="true"] .p-card {
-    background-color: #F5FDF9;
+    background-color: #fdfeff;
   }
   .p-step[data-p-active="true"] button span {
     font-weight: bold;
@@ -17,5 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .p-card {
+    box-shadow: 0 1px 3px 0 rgba(129, 140, 248, 0.5), 0 1px 2px -1px rgba(129, 140, 248, 0.5);
   }
 }
