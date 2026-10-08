@@ -1,5 +1,5 @@
 {
-  "summary": "I have over 19 years of experience in software development, primarily as a .NET Developer. I am experienced in creating technical documentation, designing and developing new functionality, building integration solutions, maintaining, refactoring, and extending existing code, as well as software testing across both on-premises and cloud (Azure) environments, spanning backend and frontend technologies. I am skilled in MS SQL query optimisation. I am focused on full-stack development and comfortable taking on leadership roles within projects. I use AI tools, including Claude, to improve my work and productivity. I am a team player, open-minded, and willing to share my knowledge with others.",
+  "summary": "I have over 19 years of experience in software development, primarily as a .NET Developer. I am experienced in creating technical documentation, designing and developing new functionality, building integration solutions, maintaining, refactoring, and extending existing code, as well as software testing across both on-premises and cloud (Azure) environments, spanning backend and frontend technologies. I am skilled in MS SQL query optimisation. I am focused on full-stack development and comfortable taking on leadership roles within projects. I use AI tools, including Claude & Antigravity, to improve my work and productivity. I am a team player, open-minded, and willing to share my knowledge with others.",
   "experience": [
     {
       "company": "Guest TEK",
@@ -272,8 +272,8 @@
       "position": "LEADER/SENIOR .NET DEVELOPER",
       "projects": [
         {
-          "name": "London Market Insurence Company",
-          "displayName": "London Market\nInsurence Co.",
+          "name": "HSL Claims",
+          "displayName": "HSL Claims",
           "description": [
             "Migrating policy data; creating integration between customer and external systems"
           ],
@@ -288,8 +288,8 @@
           "technology" : "C#, .NET (6.0), Snowflake, MSSQL, IaC: Terraform + CI/CD with DevOps, Azure hosted ( Data Factory + SHIR, Service Bus, Function App, VNET integration, NoSQL (Storage Account), APIM, Front Door, OAuth2 + Azure AD), small episode with Angular 6 "
         },
         {
-          "name": "London Market Insurence Company",
-          "displayName": "London Market\nInsurence Co.",
+          "name": "Special Risk",
+          "displayName": "Special Risk",
           "description": [
             "Migrating insurance documents (sourced from internal storage, SQL binaries) to SharePoint"
           ],
@@ -305,8 +305,8 @@
           "technology" : "C#, .NET (6.0), Intranet storage, MSSQL, SharePoint (PnP Framework), OpenXml (preparing reporting tool)"
         },
         {
-          "name": "London Market Insurence Company",
-          "displayName": "London Market\nInsurence Co.",
+          "name": "BUD Claims",
+          "displayName": "BUD Claims",
           "description": [
             "Creating policy/claim management application"
           ],

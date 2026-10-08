@@ -63,13 +63,26 @@ p-stepper {
     display: grid !important;
     --height: auto !important;
   }
+
   .p-steppanel:not([data-p-active="true"]) .p-motion {
     display: none !important;
   }
+
   .p-steppanel-content > div:last-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .p-steplist,
+  p-step-list {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .p-step {
+    flex: 1 1 12rem;   /* grow to fill the row, wrap when less than 12rem is available */
+    min-width: 12rem;
   }
 
   .indigo-stepper,
@@ -171,6 +184,10 @@ p-stepper {
       width: 100%;
       padding: 0.875rem 0.5rem 1.125rem 0.5rem;
     }
+
+    .p-steppanel-content .py-5.gap-2 {
+      padding-block-start: 0;
+    }
   }
 }
 
@@ -254,3 +271,4 @@ h6 {
 .project-task {
   padding-bottom: 12px;
 }
+
