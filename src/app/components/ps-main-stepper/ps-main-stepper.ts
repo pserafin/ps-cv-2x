@@ -1,4 +1,4 @@
-import { Component, input, computed } from '@angular/core';
+import { Component, input, computed, signal } from '@angular/core';
 import { Stepper, StepPanel, Step, StepItem } from 'primeng/stepper';
 import { ButtonDirective } from 'primeng/button';
 import { Cv, Experience } from '../../data/models';
@@ -13,5 +13,13 @@ import { PsMainStepperList } from '../ps-main-stepper-list/ps-main-stepper-list'
 export class PsMainStepper {
   public readonly model = input.required<Cv>();
   protected readonly experience = computed<Experience[]>(() => this.model().experience);
-  protected activeStep: number = 1;
+  protected activeStep = signal<number>(1);
+  protected innerStep = signal<number>(1);
+
+  protected onValueChange(idx: number | undefined) {
+    if (idx !== undefined) {
+      this.activeStep.set(idx);
+    }
+    this.innerStep.set(1);
+  }
 }

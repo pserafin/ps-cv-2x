@@ -1,0 +1,16 @@
+.col-date {
+  width: 120px;
+  font-weight: bold;
+  color: var(--p-teal-800);
+  white-space: nowrap;
+}
+
+table {
+  td {
+    padding-bottom: calc(var(--spacing) * 4);
+    vertical-align: middle;
+    b {
+      color: var(--p-teal-800);
+    }
+  }
+}

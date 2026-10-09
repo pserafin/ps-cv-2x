@@ -21,4 +21,17 @@
   .p-card {
     box-shadow: 0 1px 3px 0 rgba(129, 140, 248, 0.5), 0 1px 2px -1px rgba(129, 140, 248, 0.5);
   }
+  .p-stepitem .p-stepper-separator {
+    margin: 0 0 0 1rem;
+  }
+  .p-step {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .p-stepitem .p-step-panel-last .p-steppanel-content {
+    margin-left: 0;
+    p-step-panel {
+      padding-inline-start: 0;
+    }
+  }
 }

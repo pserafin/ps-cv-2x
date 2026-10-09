@@ -85,6 +85,7 @@ p-stepper {
     min-width: 12rem;
   }
 
+
   .indigo-stepper,
   .p-stepper {
     .p-step-active {
@@ -125,6 +126,7 @@ p-stepper {
     .p-steppanel {
       background-color: #fdfeff;
     }
+
   }
 
   // Restore horizontal stepper layout and separator when nested inside outer vertical p-stepitem
@@ -150,7 +152,7 @@ p-stepper {
       flex-direction: row !important;
       align-items: center !important;
       gap: 1rem;
-      padding: 0.5rem;
+      padding: .5rem 0;
 
       &:last-of-type {
         flex: initial !important;
@@ -182,7 +184,7 @@ p-stepper {
 
     .p-steppanels {
       width: 100%;
-      padding: 0.875rem 0.5rem 1.125rem 0.5rem;
+      padding: 0;
     }
 
     .p-steppanel-content .py-5.gap-2 {
@@ -272,3 +274,7 @@ h6 {
   padding-bottom: 12px;
 }
 
+.p-4y {
+  padding: calc(var(--spacing) * 4) 0;
+  margin-left: -2rem;
+}

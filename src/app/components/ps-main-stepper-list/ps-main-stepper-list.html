@@ -2,58 +2,31 @@
   <ps-main-stepper-item [data]="data()[0]" [position]="position()" [icon]="icon()" />
 }
 @if(data().length > 1) {
-<!-- <p-stepper [(value)]="activeStep" class="indigo-stepper" styleClass="indigo-stepper">
-  @for(item of data(); track item.name; let i = $index ) {
-    <p-step-item [value]="i+1">
-        <p-step>{{item.name}}</p-step>
-        <p-step-panel>
-            <ng-template #content let-activateCallback="activateCallback">
-                <div class="flex flex-col w-full">
-                    <div class="p-card p-4 w-full">
-                      <ps-main-stepper-item [data]="item" [position]="position()" [icon]="icon()"/>
-                    </div>
-                </div>
-                <div class="py-5 gap-2">
-                  @if (i > 0) {
-                    <button type="button" pButton severity="secondary" (click)="activateCallback(i)">Back</button>
-                  }
-                  @if (i < data().length - 1) {
-                    <button type="button" pButton (click)="activateCallback(i+2)">Next</button>
-                  }
-                </div>
-            </ng-template>
+  <!-- Inner stepper, independent state -->
+  <p-stepper [(value)]="activeStep" class="inner-stepper indigo-stepper">
+    <p-step-list>
+      @for(item of data(); track item.name; let i=$index) {
+        <p-step [value]="i+1">{{item.name}}</p-step>
+      }
+    </p-step-list>
+    <p-step-panels>
+      @for(item of data(); track item.name; let i=$index) {
+        <p-step-panel [value]="i+1" class="{{i==(data().length-1) ? 'p-step-panel-last' : ''}}">
+          <ng-template #content let-activateCallback="activateCallback">
+            <div class="flex flex-col gap-2 p-4y">
+              <ps-main-stepper-item [data]="item" [position]="position()" [icon]="icon()" />
+            </div>
+            <div class="py-5 gap-2">
+                @if (i > 0) {
+                  <button type="button" pButton severity="secondary" (click)="activateCallback(i)">Back</button>
+                }
+                @if (i < data().length - 1) {
+                  <button type="button" pButton (click)="activateCallback(i+2)">Next</button>
+                }
+            </div>
+          </ng-template>
         </p-step-panel>
-    </p-step-item>
-  }
-  </p-stepper> -->
-
-
-            <!-- Inner stepper, independent state -->
-            <p-stepper [(value)]="activeStep" class="inner-stepper indigo-stepper">
-              <p-step-list>
-                @for(item of data(); track item.name; let i=$index) {
-                  <p-step [value]="i+1">{{item.name}}</p-step>
-                }
-              </p-step-list>
-              <p-step-panels>
-                @for(item of data(); track item.name; let i=$index) {
-                  <p-step-panel [value]="i+1" class="{{i==data().length-1 ? 'p-step-panel-last' : ''}}">
-                    <ng-template #content let-activateCallback="activateCallback">
-                      <div class="flex flex-col gap-2 p-4">
-                        <ps-main-stepper-item [data]="item" [position]="position()" [icon]="icon()" />
-                      </div>
-                      <div class="py-5 gap-2">
-                          @if (i > 0) {
-                            <button type="button" pButton severity="secondary" (click)="activateCallback(i)">Back</button>
-                          }
-                          @if (i < data().length - 1) {
-                            <button type="button" pButton (click)="activateCallback(i+2)">Next</button>
-                          }
-                      </div>
-                    </ng-template>
-                  </p-step-panel>
-                }
-              </p-step-panels>
-            </p-stepper>
+      }
+    </p-step-panels>
+  </p-stepper>
 }
-

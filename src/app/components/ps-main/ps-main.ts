@@ -5,11 +5,14 @@ import { PsMainImage } from '../ps-main-image/ps-main-image';
 import { PsMainSummary } from '../ps-main-summary/ps-main-summary';
 import { PsMainTechnology } from '../ps-main-technology/ps-main-technology';
 import { PsMainStepper } from '../ps-main-stepper/ps-main-stepper';
+import { PsMainEducation } from '../ps-main-education/ps-main-education';
+import { PsMainCourses } from '../ps-main-courses/ps-main-courses';
+import { PsMainReferences } from '../ps-main-references/ps-main-references';
 import cvData from '../../data/data.json';
 
 @Component({
   selector: 'ps-main',
-  imports: [Card, PsMainImage, PsMainSummary, PsMainTechnology, PsMainStepper],
+  imports: [Card, PsMainImage, PsMainSummary, PsMainTechnology, PsMainEducation, PsMainStepper, PsMainCourses, PsMainReferences],
   templateUrl: './ps-main.html',
   styleUrl: './ps-main.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

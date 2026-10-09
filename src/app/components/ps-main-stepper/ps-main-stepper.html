@@ -1,12 +1,12 @@
-<p-stepper [value]="activeStep">
+<p-stepper [value]="activeStep()" (valueChange)="onValueChange($event)">
   @for(item of experience(); track item.company; let i = $index ) {
     <p-step-item [value]="i+1">
         <p-step>{{item.company}} ({{item.date}})</p-step>
-        <p-step-panel>
+        <p-step-panel class="{{i==(experience().length-1) ? 'p-step-panel-last' : ''}}">
             <ng-template #content let-activateCallback="activateCallback">
                 <div class="flex flex-col w-full">
                     <div class="p-card p-4 w-full">
-                      <ps-main-stepper-list [data]="item.projects" [position]="item.position" [icon]="item.icon"/>
+                      <ps-main-stepper-list [data]="item.projects" [position]="item.position" [icon]="item.icon" [(activeStep)]="innerStep"/>
                     </div>
                 </div>
                 <div class="py-5 gap-2">

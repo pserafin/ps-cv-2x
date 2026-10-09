@@ -1,4 +1,4 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, input, model } from '@angular/core';
 import { Project } from '../../data/models';
 import { PsMainStepperItem } from '../ps-main-stepper-item/ps-main-stepper-item';
 import { Stepper, StepPanel, Step, StepPanels, StepList } from 'primeng/stepper';
@@ -14,5 +14,5 @@ export class PsMainStepperList {
   public data = input.required<Project[]>();
   public position = input.required<string>();
   public icon = input.required<number>();
-  protected activeStep = signal<number>(1);
+  public activeStep = model<number>(1);
 }

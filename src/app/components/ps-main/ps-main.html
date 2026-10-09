@@ -8,8 +8,8 @@
       <p-card class="min-card w-full order-3" header="Technology Stack">
         <ps-main-technology/>
       </p-card>
-      <p-card class="min-card w-full order-5">
-        some content 5
+      <p-card class="min-card w-full order-5" header="Latest References">
+        <ps-main-references />
       </p-card>
     </div>
 
@@ -18,11 +18,14 @@
       <p-card class="min-card w-full order-2" header="Summary">
         <ps-main-summary [data]="model().summary"/>
       </p-card>
-      <p-card class="min-card w-full order-4">
+      <p-card class="min-card w-full order-4" header="Professional Experience">
         <ps-main-stepper [model]="model()"/>
       </p-card>
-      <p-card class="min-card w-full order-6">
-        some content 6
+      <p-card class="min-card w-full order-6" header="Education">
+        <ps-main-education />
+      </p-card>
+      <p-card class="min-card w-full order-8" header="Certificates & Courses">
+        <ps-main-courses [certs]="model().certificates" [courses]="model().courses"/>
       </p-card>
     </div>
 
