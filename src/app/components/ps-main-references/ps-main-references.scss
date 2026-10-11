@@ -1,0 +1,35 @@
+p {
+  text-align: justify;
+}
+
+.p-card p:not(:last-child) {
+  margin-block-end: 1rem;
+}
+
+.highlighted {
+  text-align: end;
+  font-weight: bold;
+  color: var(--p-stepper-step-title-active-color);
+}
+
+:host ::ng-deep {
+  .p-steppanel[data-p-active="true"] .p-motion {
+    display: grid !important;
+    --height: auto !important;
+  }
+  .p-steppanel:not([data-p-active="true"]) .p-motion {
+    display: none !important;
+  }
+  .p-steppanel-content > div:last-of-type {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .p-step-number i {
+    font-size: 1rem;
+  }
+  .p-step[data-p-active="true"] button span {
+    font-weight: bold;
+    color: var(--p-teal-800);
+  }
+}

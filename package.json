@@ -24,6 +24,7 @@
     "@primeng/themes": "^21.0.4",
     "@tailwindcss/postcss": "^4.3.3",
     "express": "^5.1.0",
+    "flag-icons": "^7.5.0",
     "postcss": "^8.5.28",
     "primeicons": "^8.0.2",
     "primeng": "^22.1.2",

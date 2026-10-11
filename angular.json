@@ -24,10 +24,8 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              { "glob": "**/*", "input": "public" },
+              { "glob": "{pl,de,gb,se}.svg", "input": "node_modules/flag-icons/flags/1x1", "output": "/flags/1x1" }
             ],
             "styles": [
               "src/styles.scss",

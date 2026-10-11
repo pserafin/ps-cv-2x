@@ -15,7 +15,7 @@
             "Call center support agent"
           ],
           "tasks": [
-            "Fixing technical/software issues with customers Internet access"
+            "Fixing technical and software issues with customers' internet access"
           ],
           "technology" : null
         }
@@ -33,15 +33,15 @@
           "name": "PKO BP S.A.",
           "displayName": "PKO BP\nS.A.",
           "description": [
-            "Implementation of the Alnova System (main transactional system) for PKO BP S.A.",
-            "Business Partner: polish bank PKO BP .S.A."
+            "Implementing the Alnova system (main transactional system) for PKO BP S.A.",
+            "Business partner: PKO BP S.A., a Polish bank"
           ],
           "tasks": [
-            "Designing: High Level (business) and Data Designs (technical)",
-            "Software development (JCL, Cobol, DB2)",
-            "Document management (MS SharePoint)",
+            "Creating high-level (business) and data (technical) designs",
+            "Developing software (JCL, COBOL, DB2)",
+            "Managing documents (Microsoft SharePoint)",
             "Testing and bug fixing",
-            "Adjusting Application and DB Performance"
+            "Tuning application and database performance"
           ],
           "technology" : "JCL, Cobol, DB2, SharePoint"
         }
@@ -59,16 +59,16 @@
           "name": "Asseco Faktor",
           "displayName": "Asseco\nFaktor",
           "description": [
-            "Development of Invoice Factoring Application",
-            "Business Partners: Millenium Bank, BOŚ, BPS, Deutche Bank, Raiffeisen Bank, Pekao S.A."
+            "Developing an invoice factoring application",
+            "Business partners: Millennium Bank, BOŚ, BPS, Deutsche Bank, Raiffeisen Bank, Pekao S.A."
           ],
           "tasks": [
-            "Software development (PowerBuilder 10, MSSQL)",
+            "Developing software (PowerBuilder 10, MS SQL)",
             "Creating integration platforms (C#, CLR functions, WCF)",
             "Creating documentation",
             "Testing and bug fixing",
-            "Maintenance of existing code",
-            "Adjusting Application and DB Performance"
+            "Maintaining existing code",
+            "Tuning application and database performance"
           ],
           "technology" : "PowerBuilder 10, MSSQL (2005-2008), C#, CLR functions, WCF"
         },
@@ -76,14 +76,14 @@
           "name": "Mobile Touch",
           "displayName": "Mobile\nTouch",
           "description": [
-            "Development of SFA/CRM application",
-            "Business Partners: Nestle, Mondelez International, Lotte Wedel, Tchibo, Hortex Holding"
+            "Developing an SFA/CRM application",
+            "Business partners: Nestlé, Mondelez International, Lotte Wedel, Tchibo, Hortex Holding"
           ],
           "tasks": [
-            "Development of company common platform (NeoN)",
-            "Based on NeoN development of business specific products like Mobile Touch, Invoice Factor",
+            "Developing the company's common platform (NeoN)",
+            "Developing business-specific products based on NeoN, such as Mobile Touch and Invoice Factor",
             "Testing and bug fixing",
-            "Adjusting Application and DB Performance"
+            "Tuning application and database performance"
           ],
           "technology" : "C#, .NET 4.5, WCF, Silverlight, MSSQL (2008-2014), Entity Framework"
         }
@@ -101,17 +101,17 @@
           "name": "Pekao S.A.",
           "displayName": "Pekao\nS.A.",
           "description": [
-            "ModulGF – tax document registration management",
-            "Stawki – automatization of reference rates computation",
-            "EPU – communication management and integration between Bank and e-Court",
-            "Full Stack development"
+            "ModulGF – managing the registration of tax documents",
+            "Stawki – automating the calculation of reference rates",
+            "EPU – managing communication and integration between the bank and the e-court",
+            "Full-stack development"
           ],
           "tasks": [
-            "Software development",
+            "Developing software",
             "Creating documentation",
             "Testing and bug fixing",
-            "Maintenance of existing code",
-            "Adjusting Application and DB Performance"
+            "Maintaining existing code",
+            "Tuning application and database performance"
           ],
           "technology" : "C#, .NET (4.0), MVC, jQuery, JSON, HTML, CSS, Razor, Rest API, MSSQL (2012), Entity Framework"
         },
@@ -119,14 +119,14 @@
           "name": "PKN Orlen",
           "displayName": "PKN\nOrlen",
           "description": [
-            "eHurt, oneHurt – electronic service for wholesale petrol and asphalt products",
-            "Full Stack development"
+            "eHurt, oneHurt - an online service for the wholesale of petrol and asphalt products",
+            "Full-stack development"
           ],
           "tasks": [
-            "Software development",
-            "Migrating existing functionalities to new platform",
+            "Developing software",
+            "Migrating existing features to the new platform",
             "Testing and bug fixing",
-            "Designing new functionalities"
+            "Designing new features"
           ],
           "technology" : "C#, .NET (4.6), .NET Core (starting from beta => 2.0), Angular 2 (beta => final 2.0), MVC, TypeScript, JavaScript, jQuery, HTML, CSS, PrimeNG, Bootstrap, JSON, MSSQL 2012, Entity Framework"
         },
@@ -134,11 +134,11 @@
           "name": "Hoist Finance",
           "displayName": "Hoist\nFinance",
           "description": [
-            "Supporting customer DEV team",
-            "Cooperating directly with Germany branch"
+            "Supporting the customer's development team",
+            "Cooperating directly with the German branch"
           ],
           "tasks": [
-            "Creating dedicated integration functionalities between customer systems",
+            "Creating dedicated integration features between the customer's systems",
             "Creating tools for processing OpenOffice template files",
             "Analysing existing code for documentation purposes"
           ],
@@ -148,15 +148,15 @@
           "name": "SII Notifier",
           "displayName": "SII\nNotifier",
           "description": [
-            "Creating web application for managing company resources (workers, working time, projects)",
-            "The main goal of this project was to train students (interns) who were participating in SII action LAT (Summer Talent Academy)",
-            "As a Team Leader I was responsible for train interns in new technologies,  project standards and provide them good work experience in real-life project",
-            "After the training all trainees were employed by SII",
-            "Full Stack project"
+            "Creating a web application for managing company resources (employees, working time, projects)",
+            "The main goal of this project was to train students (interns) participating in SII's Summer Talent Academy (LAT) programme",
+            "As team leader, I was responsible for training the interns in new technologies and project standards, and for giving them good experience of working on a real-life project",
+            "After the training, all trainees were employed by SII",
+            "Full-stack project"
           ],
           "tasks": [
             "Gathering business requirements",
-            "Designing solution architecture",
+            "Designing the solution architecture",
             "Training interns",
             "Creating progress reports"
           ],
@@ -166,10 +166,10 @@
           "name": "ABB",
           "displayName": "ABB",
           "description": [
-            "MXP Self Service – creating web application which helps maintain ships turbocharges"
+            "MXP Self Service – creating a web application that helps maintain ship turbochargers"
           ],
           "tasks": [
-            "Software development",
+            "Developing software",
             "Testing and bug fixing"
           ],
           "technology" : "C#, .NET (4.6), MVC, Rest API, XML"
@@ -178,14 +178,14 @@
           "name": "Gyldendal",
           "displayName": "Gyldendal",
           "description": [
-            "Creating library used for transforming law files written in xml into new format",
-            "Working directly with business Customer"
+            "Creating a library for transforming legal documents written in XML into a new format",
+            "Working directly with the business customer"
           ],
           "tasks": [
-            "Software development",
+            "Developing software",
             "Testing and bug fixing",
-            "Responsible for all communication with Customer",
-            "Gathering business requirements from the Customer and preparing needed documentation"
+            "Handling all communication with the customer",
+            "Gathering business requirements from the customer and preparing the necessary documentation"
           ],
           "technology" : "C#, .NET Standard, XML"
         },
@@ -193,11 +193,11 @@
           "name": "Ingenico",
           "displayName": "Ingenico",
           "description": [
-            "Creating web app for maintaining payment terminals",
-            "Full Stack development"
+            "Creating a web app for managing payment terminals",
+            "Full-stack development"
           ],
           "tasks": [
-            "Software development",
+            "Developing software",
             "Testing and bug fixing"
           ],
           "technology" : "C#, .NET Core (2.1), Angular (5), MVC, TypeScript, RxJS, JavaScript, jQuery, HTML, CSS,  Bootstrap, JSON, MSSQL (2016), Entity Framework, Azure (CI/CD with DevOps, App Services)"
@@ -206,11 +206,11 @@
           "name": "Bilpoolen",
           "displayName": "Bilpoolen",
           "description": [
-            "Maintaining web app for car-sharing company",
-            "Full Stack development"
+            "Maintaining a web app for a car-sharing company",
+            "Full-stack development"
           ],
           "tasks": [
-            "Software development (mainly maintenance)",
+            "Developing software (mainly maintenance)",
             "Testing and bug fixing"
           ],
           "technology" : "C#, .NET (4.5), MVC, TypeScript, JavaScript, jQuery, HTML, CSS,  Bootstrap, JSON, MSSQL (2012), Entity Framework"
@@ -219,14 +219,14 @@
           "name": "SII Spot",
           "displayName": "SII\nSpot",
           "description": [
-            "Creating web application for managing parking lots in one of the SII Offices",
-            "This project was designed and created by me when I was in between projects as a free time filler",
-            "Full Stack development"
+            "Creating a web application for managing parking lots in one of the SII offices",
+            "Designed and built on my own initiative between projects",
+            "Full-stack development"
           ],
           "tasks": [
             "Gathering business requirements",
-            "Designing solution architecture",
-            "Development and bugfixes"
+            "Designing the solution architecture",
+            "Developing features and fixing bugs"
           ],
           "technology" : "C#, .NET Core (3.0), Angular (8), MVC, TypeScript, RxJS, NgRx, HTML, SCSS,  JSON, Material Design, Azure (CI/CD with DevOps, Azure App Services, Azure Storage)"
         },
@@ -234,11 +234,11 @@
           "name": "Leica Geosystems",
           "displayName": "Leica\nGeosys.",
           "description": [
-            "BLK3D Web – creating web application for measurement of objects on images",
-            "Full Stack development"
+            "BLK3D Web - creating a web application for measuring objects in images",
+            "Full-stack development"
           ],
           "tasks": [
-            "Software development",
+            "Developing software",
             "Testing and bug fixing"
           ],
           "technology" : "C#, .NET Core (2.2), Angular (7), MVC, TypeScript, RxJS, NgRx, HTML, SCSS, Material Design, JSON, Azure Storage , Azure (CI/CD with DevOps, App Services)"
@@ -247,16 +247,16 @@
           "name": "10x Psychology",
           "displayName": "10x\nPsych.",
           "description": [
-            "10xDashboard/10xAssesment – creating web application managing/improving people performance in the workplace",
+            "10xDashboard / 10xAssessment - creating a web application for managing and improving employee performance in the workplace",
             "Creating migration services using Azure Data Factory"
           ],
           "tasks": [
-            "Software development",
-            "Creating mechanism for templating Interview Guides (OpenXml)",
-            "Creating Disaster Recovery mechanism (backups and restoration of business data and services)",
+            "Developing software",
+            "Creating a mechanism for templating interview guides (Open XML)",
+            "Creating a disaster recovery mechanism (backup and restoration of business data and services)",
             "Testing and bug fixing",
             "Improving application performance",
-            "Implementing Azure B2C Authentication as alternative authorisation method",
+            "Implementing Azure AD B2C authentication as an alternative authentication method",
             "Creating data migrations with Azure Data Factory"
           ],
           "technology" : "C#, .Net (4.8), .NET Core (2.2/3.1), MSSQL, Word.Interop, OpenXml, Azure DevOps CI/CD, Azure (Data Factory, Key Vault, App Service (+ slots), Function App, Logic App, SQL Server, Storage (Blobs/Tables/Queues), Virtual Machine, Active Directory (B2C), Application Insights, Arm Templates)"
@@ -275,15 +275,16 @@
           "name": "HSL Claims",
           "displayName": "HSL Claims",
           "description": [
-            "Migrating policy data; creating integration between customer and external systems"
+            "Migrating policy data",
+            "Creating integrations between the customer's systems and external systems"
           ],
           "tasks": [
-            "Preparing solution architecture",
-            "Business analysis",
-            "Team leading",
-            "Software development",
+            "Preparing the solution architecture",
+            "Performing business analysis",
+            "Leading the development team",
+            "Developing software",
             "Preparing documentation",
-            "Performing analysis of existing customer applications"
+            "Analysing existing customer applications"
           ],
           "technology" : "C#, .NET (6.0), Snowflake, MSSQL, IaC: Terraform + CI/CD with DevOps, Azure hosted ( Data Factory + SHIR, Service Bus, Function App, VNET integration, NoSQL (Storage Account), APIM, Front Door, OAuth2 + Azure AD), small episode with Angular 6 "
         },
@@ -291,16 +292,16 @@
           "name": "Special Risk",
           "displayName": "Special Risk",
           "description": [
-            "Migrating insurance documents (sourced from internal storage, SQL binaries) to SharePoint"
+            "Migrating insurance documents (sourced from internal storage and SQL binary data) to SharePoint"
           ],
           "tasks": [
-            "Preparing solution architecture",
-            "Working with infosec team to ensure security and compliance of the solution",
-            "Business analysis",
-            "Software development",
+            "Preparing the solution architecture",
+            "Working with the InfoSec team to ensure the security and compliance of the solution",
+            "Performing business analysis",
+            "Developing software",
             "Preparing documentation",
-            "Performing analysis of existing internal applications and storage solutions",
-            "SharePoint integration (PnP Framework)"
+            "Analysing existing internal applications and storage solutions",
+            "Integrating with SharePoint (PnP Framework)"
           ],
           "technology" : "C#, .NET (6.0), Intranet storage, MSSQL, SharePoint (PnP Framework), OpenXml (preparing reporting tool)"
         },
@@ -308,21 +309,21 @@
           "name": "BUD Claims",
           "displayName": "BUD Claims",
           "description": [
-            "Creating policy/claim management application"
+            "Creating a policy and claims management application"
           ],
           "tasks": [
-            "Preparing solution architecture",
-            "Event-Driven architecture design and implementation (Azure Service Bus, Azure Function App)",
-            "Working with infosec team to ensure security and compliance of the solution",
-            "Working directly with business analytics to gather business requirements",
-            "Software development",
+            "Preparing the solution architecture",
+            "Designing and implementing event-driven architecture (Azure Service Bus, Azure Function App)",
+            "Working with the InfoSec team to ensure the security and compliance of the solution",
+            "Working directly with business analysts to gather business requirements",
+            "Developing software",
             "Preparing documentation",
-            "Performing analysis of existing internal applications (data sourcing)",
-            "Code migration to latest framework versions",
-            "Creating integration API's (.Net Http-based endpoints), Function App, APIM",
-            "SharePoint integration (Graph API)",
-            "User account management (Azure AD, OAuth2, OpenID Connect, Graph API)",
-            "Creating deterministic indexation mechanism for SharePoint documents"
+            "Analysing existing internal applications (data sourcing)",
+            "Migrating code to the latest framework versions",
+            "Creating integration APIs (.NET HTTP-based endpoints), Function Apps and APIM",
+            "Integrating with SharePoint (Graph API)",
+            "Managing user accounts (Azure AD, OAuth2, OpenID Connect, Graph API)",
+            "Creating a deterministic indexing mechanism for SharePoint documents"
           ],
           "technology" : "C#, .NET (10.0), Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool)"
         }
@@ -349,14 +350,15 @@
     "Advanced DB SQL (IBM)"
   ],
   "languages": [
-    "English - Advanced",
-    "German – Basic",
-    "Swedish - Basic"
+    {"name": "Polish", "level": "Native", "icon": "flags/1x1/pl.svg"},
+    {"name": "English", "level": "Advanced", "icon": "flags/1x1/gb.svg"},
+    {"name": "German", "level": "Elementary", "icon": "flags/1x1/de.svg"},
+    {"name": "Swedish", "level": "Elementary", "icon": "flags/1x1/se.svg"}
 
   ],
   "passions": [
-    "Family - as in past the work & programming was my biggest passion, nowadays my biggest passion and love is my Family, which fulfils my every free moment of life",
-    "Volleyball - I guess it's the last activity which I can effort to take (because of Family)",
-    "Sense of humour - it's always good to slightly bright up our working day"
+    "Family - in the past, work and programming were my biggest passion, but nowadays my biggest passion and love is my family, which fills every free moment I have",
+    "Volleyball - I guess it's the last activity I can afford to make time for (because of my family).",
+    "Sense of humour - it's always good to brighten up the working day a little"
   ]
 }

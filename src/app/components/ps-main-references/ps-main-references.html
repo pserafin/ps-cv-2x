@@ -1,7 +1,14 @@
-<p-stepper [value]="1">
+<p-stepper [(value)]="activeStep">
 
   <p-step-item [value]="1">
-    <p-step>Vaishnu</p-step>
+      <p-step>
+        <ng-template #content let-activateCallback="activateCallback">
+          <button type="button" class="p-step-header" (click)="activateCallback()">
+            <span class="p-step-number"><i class="pi pi-thumbs-up-fill"></i></span>
+            <span class="p-step-title">Vaishnu</span>
+          </button>
+        </ng-template>
+      </p-step>
     <p-step-panel>
         <ng-template #content let-activateCallback="activateCallback">
             <div class="flex flex-col w-full">
@@ -21,116 +28,141 @@
                   <p>
                     I would highly recommend Pawel to any team looking for a talented, thoughtful, and highly committed software engineer and technical leader.
                   </p>
+                  <p class="highlighted">Vaishnu kumar Hariharan, Lead Software Engineer at Hiscox</p>
                 </div>
             </div>
             <div class="py-5 gap-2">
-              <button type="button" pButton severity="secondary" (click)="activateCallback(0)">Back</button>
               <button type="button" pButton (click)="activateCallback(2)">Next</button>
             </div>
         </ng-template>
     </p-step-panel>
   </p-step-item>
 
-  <p-step-item [value]="1">
-    <p-step>AAA 1</p-step>
+  <p-step-item [value]="2">
+      <p-step>
+        <ng-template #content let-activateCallback="activateCallback">
+          <button type="button" class="p-step-header" (click)="activateCallback()">
+            <span class="p-step-number"><i class="pi pi-thumbs-up-fill"></i></span>
+            <span class="p-step-title">Dean</span>
+          </button>
+        </ng-template>
+      </p-step>
     <p-step-panel>
         <ng-template #content let-activateCallback="activateCallback">
             <div class="flex flex-col w-full">
-                <div class="p-card p-4 w-full">
-                  AAA 1
+               <div class="p-card p-4 w-full">
+                  <p>
+                    I managed Pawel for 5 years.  He worked on a range of projects for me from payment portals  in angular to .net APIs for integrating legacy, to blazor UIs for internal user applications and even some ETL work for supporting 3rd party data transfers.   He is a rare commodity in that his knowledge is deep and vast.  Couple that with a terrific work rate, ownership of a problem and a willingness to mentor others and you have a serious asset on your hands. An excellent person to work with!
+                  </p>
+                  <p class="highlighted">Dean Lesslie, Head of Engineering at Hiscox Re</p>
                 </div>
             </div>
             <div class="py-5 gap-2">
-              <button type="button" pButton severity="secondary" (click)="activateCallback(0)">Back</button>
-              <button type="button" pButton (click)="activateCallback(2)">Next</button>
+              <button type="button" pButton severity="secondary" (click)="activateCallback(1)">Back</button>
+              <button type="button" pButton (click)="activateCallback(3)">Next</button>
             </div>
         </ng-template>
     </p-step-panel>
   </p-step-item>
 
-  <p-step-item [value]="1">
-    <p-step>AAA 1</p-step>
+  <p-step-item [value]="3">
+      <p-step>
+        <ng-template #content let-activateCallback="activateCallback">
+          <button type="button" class="p-step-header" (click)="activateCallback()">
+            <span class="p-step-number"><i class="pi pi-thumbs-up-fill"></i></span>
+            <span class="p-step-title">Nick</span>
+          </button>
+        </ng-template>
+      </p-step>
     <p-step-panel>
         <ng-template #content let-activateCallback="activateCallback">
             <div class="flex flex-col w-full">
                 <div class="p-card p-4 w-full">
-                  AAA 1
+                  <p>
+                    I have had the pleasure of working closely with Pawel for almost five years as he helped design and build our proprietary London Market claims workbench, and I can say without hesitation that he has been one of the most capable and dependable engineers I've worked with.
+                  </p>
+                  <p>
+                    Technically, Pawel is exceptional. He has a deep, end-to-end understanding of complex systems — from integration architecture through to front-end behaviour — and he architected and delivered foundational, core workbench features, including search engine, document management features, vendor integration, and user role and access management. He doesn't just write code; he understands why the system behaves as it does, anticipates edge cases, and designs solutions built to last.
+                  </p>
+                  <p>
+                    What has always impressed me most is how well Pawel understands our end users. He doesn't just build to a spec — he thinks about how claims handlers will actually use the system day to day, and consistently weighs up the trade-offs between feature functionality and optimising performance, making sensible calls that kept the product both powerful and genuinely usable.
+                  </p>
+                  <p>
+                    Beyond his technical skill, Pawel is someone who sets clear direction. He regularly established architectural design from concept, and presented demos to the wider team, explained difficult concepts clearly, and generously supported colleagues to raise the quality bar around him.
+                  </p>
+                  <p>
+                    What sets Pawel apart is his work ethic and the consistency of his output. He took genuine ownership, held himself, his team, and our vendors to high standards, and delivered reliably even against tight deadlines — without ever compromising on quality.
+                  </p>
+                  <p>
+                    Any team would be fortunate to have Pawel. I recommend him wholeheartedly
+                  </p>
+                  <p class="highlighted">Nick Towers, Product Manager at Hiscox</p>
                 </div>
             </div>
             <div class="py-5 gap-2">
-              <button type="button" pButton severity="secondary" (click)="activateCallback(0)">Back</button>
-              <button type="button" pButton (click)="activateCallback(2)">Next</button>
+              <button type="button" pButton severity="secondary" (click)="activateCallback(2)">Back</button>
+              <button type="button" pButton (click)="activateCallback(4)">Next</button>
             </div>
         </ng-template>
     </p-step-panel>
   </p-step-item>
 
-  <p-step-item [value]="1">
-    <p-step>AAA 1</p-step>
+  <p-step-item [value]="4">
+      <p-step>
+        <ng-template #content let-activateCallback="activateCallback">
+          <button type="button" class="p-step-header" (click)="activateCallback()">
+            <span class="p-step-number"><i class="pi pi-thumbs-up-fill"></i></span>
+            <span class="p-step-title">Joanna</span>
+          </button>
+        </ng-template>
+      </p-step>
     <p-step-panel>
         <ng-template #content let-activateCallback="activateCallback">
             <div class="flex flex-col w-full">
                 <div class="p-card p-4 w-full">
-                  AAA 1
+                  <p>
+                    I had the pleasure of working with Paweł as his Scrum Master a few years ago. He is a highly engaged and reliable team member who takes real ownership of his work and always makes sure to follow things through to completion. He consistently delivers high-quality work on time and can always be trusted to get things done. It was a real pleasure working with him!
+                  </p>
+                  <p class="highlighted">Joanna Stańczak, Team Leader at Future Processing</p>
                 </div>
             </div>
             <div class="py-5 gap-2">
-              <button type="button" pButton severity="secondary" (click)="activateCallback(0)">Back</button>
-              <button type="button" pButton (click)="activateCallback(2)">Next</button>
+              <button type="button" pButton severity="secondary" (click)="activateCallback(3)">Back</button>
+              <button type="button" pButton (click)="activateCallback(5)">Next</button>
             </div>
         </ng-template>
       </p-step-panel>
   </p-step-item>
 
-  <p-step-item [value]="1">
-    <p-step>AAA 1</p-step>
+  <p-step-item [value]="5">
+      <p-step>
+        <ng-template #content let-activateCallback="activateCallback">
+          <button type="button" class="p-step-header" (click)="activateCallback()">
+            <span class="p-step-number"><i class="pi pi-thumbs-up-fill"></i></span>
+            <span class="p-step-title">Bernie</span>
+          </button>
+        </ng-template>
+      </p-step>
     <p-step-panel>
         <ng-template #content let-activateCallback="activateCallback">
             <div class="flex flex-col w-full">
                 <div class="p-card p-4 w-full">
-                  AAA 1
+                  <p>
+                    Paweł joined 10x in amongst a large development team to build .NET solutions within Azure. Over the course of his 2+ year placement he excelled in delivery, employing his skills and experience on related technologies to deliver solutions within, and outside, these areas, i.e. Angular applications, Azure Data Factory implementations, replication configuration for multiple Azure data repositories - to name a few.
+                  </p>
+                  <p>
+                    Paweł was a professional in every sense of the word, and stood apart in his ability to absorb and execute newly acquired knowledge with ease - a key ability when working within the cloud using new and shifting technologies. He worked extremely well under pressure and was very well liked by his colleagues across all the IT teams.
+                  </p>
+                  <p>
+                    One aspect of his work mindset that I appreciated was that he would always go that extra step to think of what the business, or I, was going to ask for next, or what would add value that hadn't been previously raised. Having one of the team come to you with these solutions, in a high pressure, tight deadline, environment was always welcomed - and made my job much easier. Thanks Paweł.
+                  </p>
+                  <p class="highlighted">Bernie Cook, Head of Development at 10x Psychology</p>
                 </div>
             </div>
             <div class="py-5 gap-2">
-              <button type="button" pButton severity="secondary" (click)="activateCallback(0)">Back</button>
-              <button type="button" pButton (click)="activateCallback(2)">Next</button>
+              <button type="button" pButton severity="secondary" (click)="activateCallback(4)">Back</button>
             </div>
         </ng-template>
     </p-step-panel>
   </p-step-item>
-
-  <p-step-item [value]="1">
-    <p-step>AAA 1</p-step>
-    <p-step-panel>
-        <ng-template #content let-activateCallback="activateCallback">
-            <div class="flex flex-col w-full">
-                <div class="p-card p-4 w-full">
-                  AAA 1
-                </div>
-            </div>
-            <div class="py-5 gap-2">
-              <button type="button" pButton severity="secondary" (click)="activateCallback(0)">Back</button>
-              <button type="button" pButton (click)="activateCallback(2)">Next</button>
-            </div>
-        </ng-template>
-    </p-step-panel>
-  </p-step-item>
-
-  <p-step-item [value]="1">
-    <p-step>AAA 1</p-step>
-    <p-step-panel>
-        <ng-template #content let-activateCallback="activateCallback">
-            <div class="flex flex-col w-full">
-                <div class="p-card p-4 w-full">
-                  AAA 1
-                </div>
-            </div>
-            <div class="py-5 gap-2">
-              <button type="button" pButton severity="secondary" (click)="activateCallback(0)">Back</button>
-              <button type="button" pButton (click)="activateCallback(2)">Next</button>
-            </div>
-        </ng-template>
-    </p-step-panel>
-  </p-step-item>
-
 </p-stepper>

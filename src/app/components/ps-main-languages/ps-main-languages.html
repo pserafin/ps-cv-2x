@@ -1,0 +1,10 @@
+<div class="flex flex-row gap-4">
+  @for(item of data(); track item.name) {
+    <div class="circle-bg">
+      <a class="circle-link bg" title="{{item.name}}">
+        <img src="{{item.icon}}" width="24" alt="{{item.name}}" />
+      </a>
+      <h5>{{item.name}} <br> ({{item.level}})</h5>
+    </div>
+  }
+</div>

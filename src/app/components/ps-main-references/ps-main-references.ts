@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Stepper, StepPanel, Step, StepItem } from 'primeng/stepper';
 import { ButtonDirective } from 'primeng/button';
 
@@ -8,4 +8,6 @@ import { ButtonDirective } from 'primeng/button';
   styleUrl: './ps-main-references.scss',
   templateUrl: './ps-main-references.html',
 })
-export class PsMainReferences {}
+export class PsMainReferences {
+  protected activeStep = signal<number>(1);
+}

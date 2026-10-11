@@ -27,6 +27,15 @@
       <p-card class="min-card w-full order-8" header="Certificates & Courses">
         <ps-main-courses [certs]="model().certificates" [courses]="model().courses"/>
       </p-card>
+      <p-card class="min-card w-full order-10" header="Languages">
+        <ps-main-languages [data]="model().languages"/>
+      </p-card>
+      <p-card class="min-card w-full order-12" header="Passion & Hobbies">
+        <ps-main-hobbies [data]="model().passions"/>
+      </p-card>
+      <p-card class="min-card w-full order-14" header="Download CV">
+        <ps-main-download/>
+      </p-card>
     </div>
 
     <footer class="order-last col-span-1 3xl:col-span-2">

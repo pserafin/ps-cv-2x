@@ -37,7 +37,7 @@ export class Cv {
   experience: Experience[];
   certificates: string[];
   courses: string[];
-  languages: string[];
+  languages: Language[];
   passions: string[];
 
   constructor() {
@@ -48,4 +48,10 @@ export class Cv {
     this.languages = [];
     this.passions = [];
   }
+}
+
+export interface Language {
+  name: string,
+  level: string,
+  icon: string
 }
