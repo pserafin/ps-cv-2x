@@ -101,9 +101,9 @@
           "name": "Pekao S.A.",
           "displayName": "Pekao\nS.A.",
           "description": [
-            "ModulGF – managing the registration of tax documents",
-            "Stawki – automating the calculation of reference rates",
-            "EPU – managing communication and integration between the bank and the e-court",
+            "ModulGF - managing the registration of tax documents",
+            "Stawki - automating the calculation of reference rates",
+            "EPU - managing communication and integration between the bank and the e-court",
             "Full-stack development"
           ],
           "tasks": [
@@ -166,7 +166,7 @@
           "name": "ABB",
           "displayName": "ABB",
           "description": [
-            "MXP Self Service – creating a web application that helps maintain ship turbochargers"
+            "MXP Self Service - creating a web application that helps maintain ship turbochargers"
           ],
           "tasks": [
             "Developing software",
@@ -309,7 +309,8 @@
           "name": "BUD Claims",
           "displayName": "BUD Claims",
           "description": [
-            "Creating a policy and claims management application"
+            "Creating a policy and claims management application",
+            "Full-stack development"
           ],
           "tasks": [
             "Preparing the solution architecture",
