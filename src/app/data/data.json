@@ -1,91 +1,70 @@
 {
   "summary": "I have over 19 years of experience in software development, primarily as a .NET Developer. I am experienced in creating technical documentation, designing and developing new functionality, building integration solutions, maintaining, refactoring, and extending existing code, as well as software testing across both on-premises and cloud (Azure) environments, spanning backend and frontend technologies. I am skilled in MS SQL query optimisation. I am focused on full-stack development and comfortable taking on leadership roles within projects. I use AI tools, including Claude & Antigravity, to improve my work and productivity. I am a team player, open-minded, and willing to share my knowledge with others.",
   "experience": [
-    {
-      "company": "Guest TEK",
-      "icon": 1,
-      "seniority": "3  months",
-      "date": "2007",
-      "position": "TIER 1 SUPPORT AGENT",
-      "projects": [
-        {
-          "name": "Tech Support",
-          "displayName": "Tech\nSupport",
-          "description": [
-            "Call center support agent"
-          ],
-          "tasks": [
-            "Fixing technical and software issues with customers' internet access"
-          ],
-          "technology" : null
-        }
-      ]
-    },
 
     {
-      "company": "Asseco Poland S.A.",
-      "icon": 2,
-      "seniority": "2 years",
-      "date": "2007-2009",
-      "position": "COBOL DEVELOPER",
+      "company": "Shimi",
+      "icon": 5,
+      "seniority": "> 4 year",
+      "date": "2021-2026",
+      "position": "LEADER/SENIOR .NET DEVELOPER",
       "projects": [
         {
-          "name": "PKO BP S.A.",
-          "displayName": "PKO BP\nS.A.",
+          "name": "HSL Claims",
+          "displayName": "HSL Claims",
           "description": [
-            "Implementing the Alnova system (main transactional system) for PKO BP S.A.",
-            "Business partner: PKO BP S.A., a Polish bank"
+            "Migrating policy data",
+            "Creating integrations between the customer's systems and external systems"
           ],
           "tasks": [
-            "Creating high-level (business) and data (technical) designs",
-            "Developing software (JCL, COBOL, DB2)",
-            "Managing documents (Microsoft SharePoint)",
-            "Testing and bug fixing",
-            "Tuning application and database performance"
+            "Preparing the solution architecture",
+            "Performing business analysis",
+            "Leading the development team",
+            "Developing software",
+            "Preparing documentation",
+            "Analysing existing customer applications"
           ],
-          "technology" : "JCL, Cobol, DB2, SharePoint"
-        }
-      ]
-    },
-
-    {
-      "company": "Asseco Business Solutions S.A.",
-      "icon": 3,
-      "seniority": "5 years",
-      "date": "2009-2015",
-      "position": "DEVELOPER",
-      "projects": [
-        {
-          "name": "Asseco Faktor",
-          "displayName": "Asseco\nFaktor",
-          "description": [
-            "Developing an invoice factoring application",
-            "Business partners: Millennium Bank, BOŚ, BPS, Deutsche Bank, Raiffeisen Bank, Pekao S.A."
-          ],
-          "tasks": [
-            "Developing software (PowerBuilder 10, MS SQL)",
-            "Creating integration platforms (C#, CLR functions, WCF)",
-            "Creating documentation",
-            "Testing and bug fixing",
-            "Maintaining existing code",
-            "Tuning application and database performance"
-          ],
-          "technology" : "PowerBuilder 10, MSSQL (2005-2008), C#, CLR functions, WCF"
+          "technology" : "C#, .NET (6.0), Snowflake, MSSQL, IaC: Terraform + CI/CD with DevOps, Azure hosted ( Data Factory + SHIR, Service Bus, Function App, VNET integration, NoSQL (Storage Account), APIM, Front Door, OAuth2 + Azure AD), small episode with Angular 6 "
         },
         {
-          "name": "Mobile Touch",
-          "displayName": "Mobile\nTouch",
+          "name": "Special Risk",
+          "displayName": "Special Risk",
           "description": [
-            "Developing an SFA/CRM application",
-            "Business partners: Nestlé, Mondelez International, Lotte Wedel, Tchibo, Hortex Holding"
+            "Migrating insurance documents (sourced from internal storage and SQL binary data) to SharePoint"
           ],
           "tasks": [
-            "Developing the company's common platform (NeoN)",
-            "Developing business-specific products based on NeoN, such as Mobile Touch and Invoice Factor",
-            "Testing and bug fixing",
-            "Tuning application and database performance"
+            "Preparing the solution architecture",
+            "Working with the InfoSec team to ensure the security and compliance of the solution",
+            "Performing business analysis",
+            "Developing software",
+            "Preparing documentation",
+            "Analysing existing internal applications and storage solutions",
+            "Integrating with SharePoint (PnP Framework)"
           ],
-          "technology" : "C#, .NET 4.5, WCF, Silverlight, MSSQL (2008-2014), Entity Framework"
+          "technology" : "C#, .NET (6.0), Intranet storage, MSSQL, SharePoint (PnP Framework), OpenXml (preparing reporting tool)"
+        },
+        {
+          "name": "BUD Claims",
+          "displayName": "BUD Claims",
+          "description": [
+            "Creating a policy and claims management application",
+            "Full-stack development"
+          ],
+          "tasks": [
+            "Preparing the solution architecture",
+            "Designing and implementing event-driven architecture (Azure Service Bus, Azure Function App)",
+            "Working with the InfoSec team to ensure the security and compliance of the solution",
+            "Working directly with business analysts to gather business requirements",
+            "Developing software",
+            "Preparing documentation",
+            "Analysing existing internal applications (data sourcing)",
+            "Migrating code to the latest framework versions",
+            "Creating integration APIs (.NET HTTP-based endpoints), Function Apps and APIM",
+            "Integrating with SharePoint (Graph API)",
+            "Managing user accounts (Azure AD, OAuth2, OpenID Connect, Graph API)",
+            "Creating a deterministic indexing mechanism for SharePoint documents"
+          ],
+          "technology" : "C#, .NET (10.0), Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool)"
         }
       ]
     },
@@ -265,68 +244,90 @@
     },
 
     {
-      "company": "Shimi",
-      "icon": 5,
-      "seniority": "> 4 year",
-      "date": "2021-2026",
-      "position": "LEADER/SENIOR .NET DEVELOPER",
+      "company": "Asseco Business Solutions S.A.",
+      "icon": 3,
+      "seniority": "5 years",
+      "date": "2009-2015",
+      "position": "DEVELOPER",
       "projects": [
         {
-          "name": "HSL Claims",
-          "displayName": "HSL Claims",
+          "name": "Asseco Faktor",
+          "displayName": "Asseco\nFaktor",
           "description": [
-            "Migrating policy data",
-            "Creating integrations between the customer's systems and external systems"
+            "Developing an invoice factoring application",
+            "Business partners: Millennium Bank, BOŚ, BPS, Deutsche Bank, Raiffeisen Bank, Pekao S.A."
           ],
           "tasks": [
-            "Preparing the solution architecture",
-            "Performing business analysis",
-            "Leading the development team",
-            "Developing software",
-            "Preparing documentation",
-            "Analysing existing customer applications"
+            "Developing software (PowerBuilder 10, MS SQL)",
+            "Creating integration platforms (C#, CLR functions, WCF)",
+            "Creating documentation",
+            "Testing and bug fixing",
+            "Maintaining existing code",
+            "Tuning application and database performance"
           ],
-          "technology" : "C#, .NET (6.0), Snowflake, MSSQL, IaC: Terraform + CI/CD with DevOps, Azure hosted ( Data Factory + SHIR, Service Bus, Function App, VNET integration, NoSQL (Storage Account), APIM, Front Door, OAuth2 + Azure AD), small episode with Angular 6 "
+          "technology" : "PowerBuilder 10, MSSQL (2005-2008), C#, CLR functions, WCF"
         },
         {
-          "name": "Special Risk",
-          "displayName": "Special Risk",
+          "name": "Mobile Touch",
+          "displayName": "Mobile\nTouch",
           "description": [
-            "Migrating insurance documents (sourced from internal storage and SQL binary data) to SharePoint"
+            "Developing an SFA/CRM application",
+            "Business partners: Nestlé, Mondelez International, Lotte Wedel, Tchibo, Hortex Holding"
           ],
           "tasks": [
-            "Preparing the solution architecture",
-            "Working with the InfoSec team to ensure the security and compliance of the solution",
-            "Performing business analysis",
-            "Developing software",
-            "Preparing documentation",
-            "Analysing existing internal applications and storage solutions",
-            "Integrating with SharePoint (PnP Framework)"
+            "Developing the company's common platform (NeoN)",
+            "Developing business-specific products based on NeoN, such as Mobile Touch and Invoice Factor",
+            "Testing and bug fixing",
+            "Tuning application and database performance"
           ],
-          "technology" : "C#, .NET (6.0), Intranet storage, MSSQL, SharePoint (PnP Framework), OpenXml (preparing reporting tool)"
-        },
+          "technology" : "C#, .NET 4.5, WCF, Silverlight, MSSQL (2008-2014), Entity Framework"
+        }
+      ]
+    },
+
+    {
+      "company": "Asseco Poland S.A.",
+      "icon": 2,
+      "seniority": "2 years",
+      "date": "2007-2009",
+      "position": "COBOL DEVELOPER",
+      "projects": [
         {
-          "name": "BUD Claims",
-          "displayName": "BUD Claims",
+          "name": "PKO BP S.A.",
+          "displayName": "PKO BP\nS.A.",
           "description": [
-            "Creating a policy and claims management application",
-            "Full-stack development"
+            "Implementing the Alnova system (main transactional system) for PKO BP S.A.",
+            "Business partner: PKO BP S.A., a Polish bank"
           ],
           "tasks": [
-            "Preparing the solution architecture",
-            "Designing and implementing event-driven architecture (Azure Service Bus, Azure Function App)",
-            "Working with the InfoSec team to ensure the security and compliance of the solution",
-            "Working directly with business analysts to gather business requirements",
-            "Developing software",
-            "Preparing documentation",
-            "Analysing existing internal applications (data sourcing)",
-            "Migrating code to the latest framework versions",
-            "Creating integration APIs (.NET HTTP-based endpoints), Function Apps and APIM",
-            "Integrating with SharePoint (Graph API)",
-            "Managing user accounts (Azure AD, OAuth2, OpenID Connect, Graph API)",
-            "Creating a deterministic indexing mechanism for SharePoint documents"
+            "Creating high-level (business) and data (technical) designs",
+            "Developing software (JCL, COBOL, DB2)",
+            "Managing documents (Microsoft SharePoint)",
+            "Testing and bug fixing",
+            "Tuning application and database performance"
           ],
-          "technology" : "C#, .NET (10.0), Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool)"
+          "technology" : "JCL, Cobol, DB2, SharePoint"
+        }
+      ]
+    },
+
+    {
+      "company": "Guest TEK",
+      "icon": 1,
+      "seniority": "3  months",
+      "date": "2007",
+      "position": "TIER 1 SUPPORT AGENT",
+      "projects": [
+        {
+          "name": "Tech Support",
+          "displayName": "Tech\nSupport",
+          "description": [
+            "Call center support agent"
+          ],
+          "tasks": [
+            "Fixing technical and software issues with customers' internet access"
+          ],
+          "technology" : null
         }
       ]
     }
