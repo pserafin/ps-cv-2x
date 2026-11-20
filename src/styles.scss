@@ -13,13 +13,22 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-width: 800px;
   min-height: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .p-card-title {
   text-align: center;
+}
+
+/* Top-level CV sections: left-aligned, stronger headings */
+.section-card > .p-card-body > .p-card-title {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--p-teal-800);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--p-content-border-color, #e2e8f0);
 }
 
 .card-no-padding {

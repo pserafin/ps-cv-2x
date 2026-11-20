@@ -11,11 +11,12 @@ import { PsMainReferences } from '../ps-main-references/ps-main-references';
 import { PsMainDownload } from '../ps-main-download/ps-main-download';
 import { PsMainHobbies } from '../ps-main-hobbies/ps-main-hobbies';
 import { PsMainLanguages } from '../ps-main-languages/ps-main-languages';
+import { PsMainIcons } from '../ps-main-icons/ps-main-icons';
 import cvData from '../../data/data.json';
 
 @Component({
   selector: 'ps-main',
-  imports: [Card, PsMainImage, PsMainSummary, PsMainTechnology, PsMainEducation, PsMainStepper, PsMainCourses, PsMainReferences, PsMainDownload, PsMainHobbies, PsMainLanguages],
+  imports: [Card, PsMainImage, PsMainSummary, PsMainTechnology, PsMainEducation, PsMainStepper, PsMainCourses, PsMainReferences, PsMainDownload, PsMainHobbies, PsMainLanguages, PsMainIcons],
   templateUrl: './ps-main.html',
   styleUrl: './ps-main.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -28,4 +29,5 @@ export class PsMain {
   protected readonly courses = computed<string[]>(() => this.model().courses);
   protected readonly languages = computed<Language[]>(() => this.model().languages);
   protected readonly passions = computed<string[]>(() => this.model().passions);
+  protected readonly role = computed<string>(() => this.model().experience[0]?.position ?? '');
 }

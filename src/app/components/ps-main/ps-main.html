@@ -1,44 +1,61 @@
+<div class="flex flex-col xl:grid xl:grid-cols-2 gap-6 xl:gap-8 mx-auto grid-container xl:items-start">
 
-<div class="flex flex-col 3xl:grid 3xl:grid-cols-2 gap-8 mx-auto grid-container 3xl:items-start">
-    <!-- Left Column on 2-col, unwrapped on 1-col -->
-    <div class="contents 3xl:flex 3xl:flex-col 3xl:gap-8">
-      <p-card class="min-card card-no-padding w-full order-1">
-        <ps-main-image/>
-      </p-card>
-      <p-card class="min-card w-full order-3" header="Technology Stack">
-        <ps-main-technology/>
-      </p-card>
-      <p-card class="min-card w-full order-5" header="Latest References">
-        <ps-main-references />
-      </p-card>
-    </div>
+    <!-- Hero: identity, summary, contact & download (full width) -->
+    <p-card class="hero-card w-full min-w-0 order-first xl:col-span-2">
+      <div class="grid grid-cols-1 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-6 md:gap-8 items-center">
+        <div class="hero-photo">
+          <ps-main-image/>
+        </div>
+        <div class="flex flex-col gap-4 min-w-0">
+          <div>
+            <h1 class="hero-name">Paweł&nbsp;Serafin</h1>
+            <p class="hero-role">{{ role() }}</p>
+          </div>
+          <ps-main-summary [data]="model().summary"/>
+          <div class="hero-actions flex flex-wrap items-center gap-x-8 gap-y-4">
+            <div class="flex items-center gap-2">
+              <span class="hero-label">Contact</span>
+              <ps-main-icons [mode]="1"/>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="hero-label">Download CV</span>
+              <ps-main-download/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </p-card>
 
-    <!-- Right Column on 2-col, unwrapped on 1-col -->
-    <div class="contents 3xl:flex 3xl:flex-col 3xl:gap-8">
-      <p-card class="min-card w-full order-2" header="Summary">
-        <ps-main-summary [data]="model().summary"/>
-      </p-card>
-      <p-card class="min-card w-full order-4" header="Professional Experience">
+    <!-- Left column on 2-col, unwrapped on 1-col -->
+    <div class="contents xl:flex xl:flex-col xl:gap-8 min-w-0">
+      <p-card class="section-card w-full min-w-0 order-1" header="Professional Experience">
         <ps-main-stepper [model]="model()"/>
       </p-card>
-      <p-card class="min-card w-full order-6" header="Education">
+      <p-card class="section-card w-full min-w-0 order-3" header="Latest References">
+        <ps-main-references />
+      </p-card>
+      <p-card class="section-card w-full min-w-0 order-4" header="Education">
         <ps-main-education />
-      </p-card>
-      <p-card class="min-card w-full order-8" header="Certificates & Courses">
-        <ps-main-courses [certs]="model().certificates" [courses]="model().courses"/>
-      </p-card>
-      <p-card class="min-card w-full order-10" header="Languages">
-        <ps-main-languages [data]="model().languages"/>
-      </p-card>
-      <p-card class="min-card w-full order-12" header="Passion & Hobbies">
-        <ps-main-hobbies [data]="model().passions"/>
-      </p-card>
-      <p-card class="min-card w-full order-14" header="Download CV">
-        <ps-main-download/>
       </p-card>
     </div>
 
-    <footer class="order-last col-span-1 3xl:col-span-2">
+    <!-- Right column on 2-col, unwrapped on 1-col -->
+    <div class="contents xl:flex xl:flex-col xl:gap-8 min-w-0">
+      <p-card class="section-card w-full min-w-0 order-2" header="Technology Stack">
+        <ps-main-technology/>
+      </p-card>
+      <p-card class="section-card w-full min-w-0 order-5" header="Certificates & Courses">
+        <ps-main-courses [certs]="model().certificates" [courses]="model().courses"/>
+      </p-card>
+      <p-card class="section-card w-full min-w-0 order-6" header="Languages">
+        <ps-main-languages [data]="model().languages"/>
+      </p-card>
+      <p-card class="section-card w-full min-w-0 order-7" header="Passion & Hobbies">
+        <ps-main-hobbies [data]="model().passions"/>
+      </p-card>
+    </div>
+
+    <footer class="order-last xl:col-span-2">
       Copyright&nbsp;©&nbsp;2026&nbsp;Paweł&nbsp;Serafin
     </footer>
 </div>

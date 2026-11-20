@@ -1,5 +1,5 @@
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 .p-card p:not(:last-child) {
@@ -31,5 +31,25 @@ p {
   .p-step[data-p-active="true"] button span {
     font-weight: bold;
     color: var(--p-teal-800);
+  }
+}
+
+/* Let panel contents shrink to the viewport on narrow screens */
+:host {
+  display: block;
+  min-width: 0;
+}
+:host ::ng-deep {
+  .p-stepper,
+  .p-stepitem,
+  .p-steppanel {
+    min-width: 0;
+  }
+  .p-steppanel .p-motion > * {
+    min-width: 0;
+  }
+  .p-steppanel-content {
+    width: auto;
+    min-width: 0;
   }
 }

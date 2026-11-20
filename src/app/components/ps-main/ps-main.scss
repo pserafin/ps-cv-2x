@@ -1,18 +1,53 @@
 footer {
-    text-align: right;
-}
-
-.min-card {
-  min-width: 640px;
+  text-align: right;
 }
 
 .grid-container {
-  padding: 0 10%;
-  max-width: 2560px;
+  width: 100%;
+  max-width: 1680px;
 }
 
-@media screen and (min-width: 1280px) {
-    .min-card  {
-        min-width: 0;
-    }
+.hero-photo {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-name {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--p-teal-800);
+}
+
+.hero-role {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--p-text-muted-color, #64748b);
+}
+
+.hero-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--p-text-muted-color, #64748b);
+}
+
+/* Shrink the download buttons to sit inline in the header */
+:host ::ng-deep .hero-actions ps-main-download {
+  > div {
+    gap: 0.75rem;
+  }
+  .circle-link.bg {
+    width: 48px;
+    max-width: 48px;
+  }
+  svg {
+    width: 48px;
+    height: 48px;
+  }
 }

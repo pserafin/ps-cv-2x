@@ -3,19 +3,11 @@
     <p-step-item [value]="i+1">
         <p-step>{{item.company}} ({{item.date}})</p-step>
         <p-step-panel class="{{i==(experience().length-1) ? 'p-step-panel-last' : ''}}">
-            <ng-template #content let-activateCallback="activateCallback">
-                <div class="flex flex-col w-full">
-                    <div class="p-card p-4 w-full">
+            <ng-template #content>
+                <div class="flex flex-col w-full min-w-0 pb-4">
+                    <div class="p-card p-4 w-full min-w-0">
                       <ps-main-stepper-list [data]="item.projects" [position]="item.position" [icon]="item.icon" [(activeStep)]="innerStep"/>
                     </div>
-                </div>
-                <div class="py-5 gap-2">
-                  @if (i > 0) {
-                    <button type="button" pButton severity="secondary" (click)="activateCallback(i)">Back</button>
-                  }
-                  @if (i < experience().length - 1) {
-                    <button type="button" pButton (click)="activateCallback(i+2)">Next</button>
-                  }
                 </div>
             </ng-template>
         </p-step-panel>

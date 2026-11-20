@@ -1,11 +1,10 @@
 import { Component, input, model } from '@angular/core';
 import { Project } from '../../data/models';
 import { PsMainStepperItem } from '../ps-main-stepper-item/ps-main-stepper-item';
-import { Stepper, StepPanel, Step, StepPanels, StepList } from 'primeng/stepper';
-import { ButtonDirective } from 'primeng/button';
+import { Tabs, TabList, Tab, TabPanels, TabPanel } from 'primeng/tabs';
 
 @Component({
-  imports: [ Stepper, StepPanel, Step, StepPanels, StepList , ButtonDirective, PsMainStepperItem ],
+  imports: [Tabs, TabList, Tab, TabPanels, TabPanel, PsMainStepperItem],
   selector: 'ps-main-stepper-list',
   styleUrl: './ps-main-stepper-list.scss',
   templateUrl: './ps-main-stepper-list.html',

@@ -1,11 +1,10 @@
 import { Component, input, computed, signal } from '@angular/core';
 import { Stepper, StepPanel, Step, StepItem } from 'primeng/stepper';
-import { ButtonDirective } from 'primeng/button';
 import { Cv, Experience } from '../../data/models';
 import { PsMainStepperList } from '../ps-main-stepper-list/ps-main-stepper-list';
 
 @Component({
-  imports: [Stepper, StepPanel, Step, StepItem, ButtonDirective, PsMainStepperList],
+  imports: [Stepper, StepPanel, Step, StepItem, PsMainStepperList],
   selector: 'ps-main-stepper',
   styleUrl: './ps-main-stepper.scss',
   templateUrl: './ps-main-stepper.html',
