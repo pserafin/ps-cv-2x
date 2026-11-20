@@ -17,18 +17,97 @@ body {
   overflow-x: hidden;
 }
 
-.p-card-title {
-  text-align: center;
+/* ---------- Theme: colour roles ----------
+   heading - names, section titles, degree / role titles
+   body    - running text and lists
+   meta    - labels, captions, secondary info
+   accent  - interactive & key markers only (active step/tab, dates, links, title bar)
+*/
+:root {
+  --cv-heading: #0f172a;   /* slate-900 */
+  --cv-body: #334155;      /* slate-700 */
+  --cv-meta: #64748b;      /* slate-500 */
+  --cv-accent: var(--p-primary-color);
+  --cv-page-bg: #f1f5f9;   /* slate-100: separates white cards from the page */
+  --cv-inset-bg: #f8fafc;  /* slate-50: nested panels inside cards */
+  --cv-inset-border: #e2e8f0;
+  --cv-chip-bg: var(--p-teal-50);
+  --cv-chip-text: var(--p-teal-800);
+  --cv-icon-bg: transparent;
+  --cv-dot: rgba(15, 23, 42, 0.22);
+  --cv-glow: rgba(20, 184, 166, 0.14);
 }
 
-/* Top-level CV sections: left-aligned, stronger headings */
+html.dark {
+  color-scheme: dark;
+  --cv-heading: #f8fafc;   /* slate-50 */
+  --cv-body: #cbd5e1;      /* slate-300 */
+  --cv-meta: #94a3b8;      /* slate-400 */
+  --cv-page-bg: var(--p-surface-950);
+  --cv-inset-bg: var(--p-surface-800);
+  --cv-inset-border: var(--p-surface-700);
+  --cv-chip-bg: rgba(45, 212, 191, 0.14);
+  --cv-chip-text: var(--p-teal-200);
+  --cv-icon-bg: #f1f5f9;
+  --cv-dot: rgba(255, 255, 255, 0.16);
+  --cv-glow: rgba(45, 212, 191, 0.14);
+}
+
+body {
+  background-color: var(--cv-page-bg);
+  color: var(--cv-body);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+html .p-card {
+  color: var(--cv-body);
+}
+
+.p-card-title {
+  text-align: center;
+  color: var(--cv-heading);
+}
+
+/* Top-level CV sections: neutral heading with a short accent bar */
 .section-card > .p-card-body > .p-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   text-align: left;
   font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cv-heading);
+  padding-bottom: 0.25rem;
+
+  &::before {
+    content: '';
+    flex: 0 0 auto;
+    width: 4px;
+    height: 1.1em;
+    border-radius: 2px;
+    background: var(--cv-accent);
+  }
+}
+
+/* Nested panels: tinted background instead of another shadow or colour */
+.icon-container.p-card {
+  background: var(--cv-inset-bg);
+  box-shadow: none;
+  border: 1px solid var(--cv-inset-border);
+}
+
+/* Date chip (experience steps, education) */
+.date-chip {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
   font-weight: 600;
-  color: var(--cv-accent);
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--p-content-border-color, #e2e8f0);
+  line-height: 1.4;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: var(--cv-chip-bg);
+  color: var(--cv-chip-text);
 }
 
 .card-no-padding {
@@ -37,32 +116,6 @@ body {
   .p-card-content {
     padding: 0 !important;
   }
-}
-
-/* ---------- Theme ---------- */
-:root {
-  --cv-accent: var(--p-teal-800);
-  --cv-panel-bg: #fdfeff;
-  --cv-page-bg: #ffffff;
-  --cv-icon-bg: transparent;
-  --cv-dot: rgba(15, 23, 42, 0.22);
-  --cv-glow: rgba(20, 184, 166, 0.12);
-}
-
-html.dark {
-  color-scheme: dark;
-  --cv-accent: var(--p-teal-300);
-  --cv-panel-bg: var(--p-surface-800);
-  --cv-page-bg: var(--p-surface-950);
-  --cv-icon-bg: #f1f5f9;
-  --cv-dot: rgba(255, 255, 255, 0.16);
-  --cv-glow: rgba(45, 212, 191, 0.14);
-}
-
-body {
-  background-color: var(--cv-page-bg);
-  color: var(--p-text-color);
-  transition: background-color 0.2s, color 0.2s;
 }
 
 /* Many tech/brand logos are dark-on-transparent; give them a light disc in dark mode */

@@ -1,16 +1,19 @@
 .col-date {
   width: 120px;
-  font-weight: bold;
-  color: var(--cv-accent);
   white-space: nowrap;
+  vertical-align: top;
+  padding-right: 1rem;
 }
 
 table {
   td {
     padding-bottom: calc(var(--spacing) * 4);
-    vertical-align: middle;
+    vertical-align: top;
     b {
-      color: var(--cv-accent);
+      color: var(--cv-heading);
+    }
+    span:not(.date-chip) {
+      color: var(--cv-meta);
     }
   }
 }

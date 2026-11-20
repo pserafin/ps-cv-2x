@@ -21,6 +21,25 @@ const MyPreset = definePreset(Aura, {
       800: '{teal.800}',
       900: '{teal.900}',
       950: '{teal.950}'
+    },
+    // One accent teal everywhere, with readable contrast in both modes
+    colorScheme: {
+      light: {
+        primary: {
+          color: '{primary.700}',
+          contrastColor: '#ffffff',
+          hoverColor: '{primary.800}',
+          activeColor: '{primary.900}'
+        }
+      },
+      dark: {
+        primary: {
+          color: '{primary.300}',
+          contrastColor: '{surface.900}',
+          hoverColor: '{primary.200}',
+          activeColor: '{primary.100}'
+        }
+      }
     }
   }
 });

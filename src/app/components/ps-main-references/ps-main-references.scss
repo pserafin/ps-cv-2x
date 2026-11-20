@@ -8,8 +8,15 @@ p {
 
 .highlighted {
   text-align: end;
-  font-weight: bold;
-  color: var(--p-stepper-step-title-active-color);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--cv-heading);
+}
+
+:host ::ng-deep .p-steppanel .p-card {
+  background-color: var(--cv-inset-bg);
+  box-shadow: none;
+  border: 1px solid var(--cv-inset-border);
 }
 
 :host ::ng-deep {
@@ -28,8 +35,12 @@ p {
   .p-step-number i {
     font-size: 1rem;
   }
-  .p-step[data-p-active="true"] button span {
-    font-weight: bold;
+  .p-step-title {
+    color: var(--cv-body);
+    font-weight: 600;
+  }
+  .p-step[data-p-active="true"] .p-step-title {
+    font-weight: 700;
     color: var(--cv-accent);
   }
 }

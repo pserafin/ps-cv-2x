@@ -4,11 +4,23 @@
     --height: auto !important;
   }
   .p-steppanel[data-p-active="true"] .p-card {
-    background-color: var(--cv-panel-bg);
+    background-color: var(--cv-inset-bg);
   }
-  .p-step[data-p-active="true"] button span {
-    font-weight: bold;
+  .p-step-title {
+    color: var(--cv-body);
+    font-weight: 600;
+  }
+  .p-step[data-p-active="true"] .p-step-title {
+    font-weight: 700;
     color: var(--cv-accent);
+  }
+  .step-date {
+    margin-left: 0.5rem;
+  }
+  .p-step:not([data-p-active="true"]) .step-date {
+    background: transparent;
+    color: var(--cv-meta);
+    padding-inline: 0.25rem;
   }
   .p-steppanel:not([data-p-active="true"]) .p-motion {
     display: none !important;
@@ -19,7 +31,8 @@
     align-items: start;
   }
   .p-card {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.08);
+    box-shadow: none;
+    border: 1px solid var(--cv-inset-border);
   }
   .p-stepitem .p-stepper-separator {
     margin: 0 0 0 1rem;
