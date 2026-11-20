@@ -4,11 +4,11 @@
     --height: auto !important;
   }
   .p-steppanel[data-p-active="true"] .p-card {
-    background-color: #fdfeff;
+    background-color: var(--cv-panel-bg);
   }
   .p-step[data-p-active="true"] button span {
     font-weight: bold;
-    color: var(--p-teal-800);
+    color: var(--cv-accent);
   }
   .p-steppanel:not([data-p-active="true"]) .p-motion {
     display: none !important;

@@ -1,7 +1,7 @@
 .col-date {
   width: 120px;
   font-weight: bold;
-  color: var(--p-teal-800);
+  color: var(--cv-accent);
   white-space: nowrap;
 }
 
@@ -10,7 +10,7 @@ table {
     padding-bottom: calc(var(--spacing) * 4);
     vertical-align: middle;
     b {
-      color: var(--p-teal-800);
+      color: var(--cv-accent);
     }
   }
 }

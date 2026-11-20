@@ -26,7 +26,7 @@ body {
   text-align: left;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--p-teal-800);
+  color: var(--cv-accent);
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--p-content-border-color, #e2e8f0);
 }
@@ -37,4 +37,54 @@ body {
   .p-card-content {
     padding: 0 !important;
   }
+}
+
+/* ---------- Theme ---------- */
+:root {
+  --cv-accent: var(--p-teal-800);
+  --cv-panel-bg: #fdfeff;
+  --cv-page-bg: #ffffff;
+  --cv-icon-bg: transparent;
+}
+
+html.dark {
+  color-scheme: dark;
+  --cv-accent: var(--p-teal-300);
+  --cv-panel-bg: var(--p-surface-800);
+  --cv-page-bg: var(--p-surface-950);
+  --cv-icon-bg: #f1f5f9;
+}
+
+body {
+  background-color: var(--cv-page-bg);
+  color: var(--p-text-color);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Many tech/brand logos are dark-on-transparent; give them a light disc in dark mode */
+html.dark .circle-link.bg {
+  background-color: var(--cv-icon-bg);
+}
+
+/* Contact buttons: keep brand colours readable */
+html.dark .circle-link:not(.bg) {
+  background-color: var(--cv-icon-bg);
+  border-color: transparent;
+}
+
+/* Company logos (dark text on transparent PNG) */
+html.dark .project-icon {
+  background-color: var(--cv-icon-bg);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* The decorative bottom pattern is drawn on white */
+html.dark #bckgrnd {
+  display: none;
+}
+
+/* Soften the photo a touch so it doesn't glare on a dark page */
+html.dark .hero-photo {
+  filter: brightness(0.92);
 }

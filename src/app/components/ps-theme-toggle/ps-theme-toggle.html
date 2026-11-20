@@ -1,0 +1,9 @@
+<button
+  type="button"
+  class="theme-toggle"
+  (click)="toggle()"
+  [attr.aria-pressed]="dark()"
+  [attr.aria-label]="dark() ? 'Switch to light mode' : 'Switch to dark mode'"
+  [title]="dark() ? 'Switch to light mode' : 'Switch to dark mode'">
+  <i class="pi" [class.pi-sun]="dark()" [class.pi-moon]="!dark()"></i>
+</button>
