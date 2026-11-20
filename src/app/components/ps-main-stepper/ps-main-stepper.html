@@ -1,16 +1,27 @@
-<p-stepper [value]="activeStep()" (valueChange)="onValueChange($event)">
-  @for(item of experience(); track item.company; let i = $index ) {
-    <p-step-item [value]="i+1">
-        <p-step>{{item.company}}<span class="date-chip step-date">{{item.date}}</span></p-step>
-        <p-step-panel class="{{i==(experience().length-1) ? 'p-step-panel-last' : ''}}">
-            <ng-template #content>
-                <div class="flex flex-col w-full min-w-0 pb-4">
-                    <div class="p-card p-4 w-full min-w-0">
-                      <ps-main-stepper-list [data]="item.projects" [position]="item.position" [icon]="item.icon" [(activeStep)]="innerStep"/>
-                    </div>
-                </div>
-            </ng-template>
-        </p-step-panel>
-    </p-step-item>
+<ol class="timeline">
+  @for (item of experience(); track item.company; let i = $index; let last = $last) {
+    <li class="tl-item" [class.open]="open() === i" [class.last]="last">
+      <h3 class="tl-heading">
+        <button
+          type="button"
+          class="tl-header"
+          [id]="'exp-head-' + i"
+          [attr.aria-expanded]="open() === i"
+          [attr.aria-controls]="'exp-panel-' + i"
+          (click)="toggle(i)">
+          <span class="tl-num" aria-hidden="true">{{ i + 1 }}</span>
+          <span class="tl-text">
+            <span class="tl-title">{{ item.company }}</span>
+            <span class="date-chip tl-date">{{ item.date }}</span>
+          </span>
+          <i class="pi pi-chevron-down tl-chevron" aria-hidden="true"></i>
+        </button>
+      </h3>
+      <div class="tl-panel" role="region" [id]="'exp-panel-' + i" [attr.aria-labelledby]="'exp-head-' + i">
+        <div class="tl-card">
+          <ps-main-stepper-list [data]="item.projects" [position]="item.position" [icon]="item.icon"/>
+        </div>
+      </div>
+    </li>
   }
-</p-stepper>
+</ol>

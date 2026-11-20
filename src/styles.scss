@@ -140,3 +140,89 @@ html.dark .project-icon {
 html.dark .hero-photo {
   filter: brightness(0.92);
 }
+
+/* Section titles are real <h2> elements (accessibility / SEO); keep the card-title look */
+.section-card > .p-card-body > .p-card-title h2 {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+/* Only rendered on paper */
+.print-only {
+  display: none;
+}
+
+/* ---------- Print: full CV on paper / "Save as PDF" ---------- */
+@media print {
+  @page {
+    margin: 14mm 12mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #1e293b !important;
+  }
+
+  /* Print always in the light palette */
+  html.dark {
+    color-scheme: light;
+    --cv-heading: #0f172a;
+    --cv-body: #334155;
+    --cv-meta: #64748b;
+    --cv-page-bg: #ffffff;
+    --cv-inset-bg: #ffffff;
+    --cv-inset-border: #e2e8f0;
+    --cv-chip-bg: #f0fdfa;
+    --cv-chip-text: #115e59;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  ps-theme-toggle,
+  ps-main-background,
+  .hero-actions,
+  footer {
+    display: none !important;
+  }
+
+  .layout-main-container {
+    padding: 0 !important;
+  }
+
+  .grid-container {
+    display: block !important;
+    max-width: none !important;
+  }
+
+  .grid-container > *,
+  .grid-container > .contents > * {
+    display: block;
+    margin-bottom: 6mm;
+  }
+
+  .p-card {
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0;
+    background: #fff !important;
+  }
+
+  .p-card-title,
+  h1, h2, h3, h4, h5, h6 {
+    break-after: avoid;
+  }
+
+  .tl-item,
+  .ref,
+  .group,
+  li {
+    break-inside: avoid;
+  }
+
+  .hero-photo {
+    max-width: 70mm;
+  }
+}

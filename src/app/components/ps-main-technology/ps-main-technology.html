@@ -18,7 +18,7 @@
 <div class="groups">
   @for (g of groups(); track g.name) {
     <div class="group">
-      <h4 class="group-title">{{ g.name }}</h4>
+      <h3 class="group-title">{{ g.name }}</h3>
       <ul class="chips">
         @for (t of g.items; track t.name) {
           <li class="chip" [class.chip-text]="!t.icon && !t.pi">
@@ -40,7 +40,7 @@
 
   @for (sg of skillGroups(); track sg.name) {
     <div class="group">
-      <h4 class="group-title">{{ sg.name }}</h4>
+      <h3 class="group-title">{{ sg.name }}</h3>
       <ul class="chips">
         @for (p of sg.items; track p) {
           <li class="chip chip-text">{{ p }}</li>

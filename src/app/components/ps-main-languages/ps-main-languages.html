@@ -2,9 +2,9 @@
   @for(item of data(); track item.name) {
     <div class="circle-bg">
       <a class="circle-link bg" title="{{item.name}}">
-        <img src="{{item.icon}}" width="24" alt="{{item.name}}" />
+        <img src="{{item.icon}}" width="24" alt="" />
       </a>
-      <h5>{{item.name}} <br> ({{item.level}})</h5>
+      <p class="lang-name">{{item.name}} <br> ({{item.level}})</p>
     </div>
   }
 </div>

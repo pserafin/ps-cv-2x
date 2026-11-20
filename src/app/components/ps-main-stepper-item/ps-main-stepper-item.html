@@ -1,16 +1,16 @@
 <div class="project-container">
   <div class="project-item">
-    <div class="project-icon">
+    <div class="project-icon" aria-hidden="true">
       <ps-icon-picker [icon]="icon()"></ps-icon-picker>
     </div>
     <div class="project-name">
-      <h5>{{position()}}</h5>
-      <h6>Project: <span class="default-color">{{data().name}}</span></h6>
+      <h4>{{position()}}</h4>
+      <h5>Project: <span class="default-color">{{data().name}}</span></h5>
     </div>
   </div>
   <div class="project-details">
     <div class="project-desc">
-      <h6>Project description:</h6>
+      <h5>Project description:</h5>
       <ul>
         @for(item of data().description; track item) {
         <li>
@@ -20,7 +20,7 @@
       </ul>
     </div>
     <div class="project-tasks">
-      <h6>Tasks and responsibilities:</h6>
+      <h5>Tasks and responsibilities:</h5>
       <ul>
         @for(item of data().tasks; track item) {
         <li>
@@ -31,7 +31,7 @@
     </div>
     @if (data().technology != null && data().technology) {
       <div class="project-tech">
-        <h6>Technology Stack:</h6>
+        <h5>Technology Stack:</h5>
         <ul>
           <li>
             <span class="">{{data().technology}}</span>

@@ -1,5 +1,8 @@
 {
-  "summary": "I have over 19 years of experience in software development, primarily as a .NET Developer. I am experienced in creating technical documentation, designing and developing new functionality, building integration solutions, maintaining, refactoring, and extending existing code, as well as software testing across both on-premises and cloud (Azure) environments, spanning backend and frontend technologies. I am skilled in MS SQL query optimisation. I am focused on full-stack development and comfortable taking on leadership roles within projects. I use AI tools, including Claude & Antigravity, to improve my work and productivity. I am a team player, open-minded, and willing to share my knowledge with others.",
+  "summary": "I have over {years} years of experience in software development, primarily as a .NET Developer. I am experienced in creating technical documentation, designing and developing new functionality, building integration solutions, maintaining, refactoring, and extending existing code, as well as software testing across both on-premises and cloud (Azure) environments, spanning backend and frontend technologies. I am skilled in MS SQL query optimisation. I am focused on full-stack development and comfortable taking on leadership roles within projects. I use AI tools, including Claude & Antigravity, to improve my work and productivity. I am a team player, open-minded, and willing to share my knowledge with others.",
+  "location": "Lublin, Poland",
+  "workMode": "Remote · Hybrid (Lublin only)",
+  "siteUrl": "https://pawelserafin.com",
   "experience": [
 
     {
@@ -64,7 +67,7 @@
             "Managing user accounts (Azure AD, OAuth2, OpenID Connect, Graph API)",
             "Creating a deterministic indexing mechanism for SharePoint documents"
           ],
-          "technology" : "C#, .NET (10.0), Entity Framework, Dapper, Docker, Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool)"
+          "technology" : "C#, .NET (10.0), Entity Framework, Dapper, Docker, Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool), Antigravity, Claude"
         }
       ]
     },
@@ -457,6 +460,54 @@
         "Technical Documentation",
         "Code Review",
         "Mentoring"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Vaishnu",
+      "author": "Vaishnu kumar Hariharan, Lead Software Engineer at Hiscox",
+      "text": [
+        "I had the pleasure of working with Pawel for more than three years on the same development team, and I have continued to seek his technical advice and perspective over the last five years during his time with Hiscox. That alone speaks volumes about the trust and respect he has earned as an engineer and colleague.",
+        "Pawel possesses deep expertise across the .NET technology stack and consistently demonstrates exceptional ownership in everything he undertakes. He never compromises on quality and always strives for excellence, setting high standards for himself and those around him.",
+        "What sets him apart is his willingness to challenge the status quo and share his views openly and constructively. He approaches problems with a long-term perspective, carefully considering scalability, maintainability, longevity, and fitness for purpose rather than focusing solely on short-term solutions.",
+        "Beyond his technical abilities, Pawel is a genuinely caring and supportive colleague. He takes a sincere interest in the wellbeing and success of his teammates, making him not only a great engineer but also a wonderful person to work with.",
+        "I would highly recommend Pawel to any team looking for a talented, thoughtful, and highly committed software engineer and technical leader."
+      ]
+    },
+    {
+      "name": "Dean",
+      "author": "Dean Lesslie, Head of Engineering at Hiscox Re",
+      "text": [
+        "I managed Pawel for 5 years. He worked on a range of projects for me from payment portals in angular to .net APIs for integrating legacy, to blazor UIs for internal user applications and even some ETL work for supporting 3rd party data transfers. He is a rare commodity in that his knowledge is deep and vast. Couple that with a terrific work rate, ownership of a problem and a willingness to mentor others and you have a serious asset on your hands. An excellent person to work with!"
+      ]
+    },
+    {
+      "name": "Nick",
+      "author": "Nick Towers, Product Manager at Hiscox",
+      "text": [
+        "I have had the pleasure of working closely with Pawel for almost five years as he helped design and build our proprietary London Market claims workbench, and I can say without hesitation that he has been one of the most capable and dependable engineers I've worked with.",
+        "Technically, Pawel is exceptional. He has a deep, end-to-end understanding of complex systems — from integration architecture through to front-end behaviour — and he architected and delivered foundational, core workbench features, including search engine, document management features, vendor integration, and user role and access management. He doesn't just write code; he understands why the system behaves as it does, anticipates edge cases, and designs solutions built to last.",
+        "What has always impressed me most is how well Pawel understands our end users. He doesn't just build to a spec — he thinks about how claims handlers will actually use the system day to day, and consistently weighs up the trade-offs between feature functionality and optimising performance, making sensible calls that kept the product both powerful and genuinely usable.",
+        "Beyond his technical skill, Pawel is someone who sets clear direction. He regularly established architectural design from concept, and presented demos to the wider team, explained difficult concepts clearly, and generously supported colleagues to raise the quality bar around him.",
+        "What sets Pawel apart is his work ethic and the consistency of his output. He took genuine ownership, held himself, his team, and our vendors to high standards, and delivered reliably even against tight deadlines — without ever compromising on quality.",
+        "Any team would be fortunate to have Pawel. I recommend him wholeheartedly"
+      ]
+    },
+    {
+      "name": "Joanna",
+      "author": "Joanna Stańczak, Team Leader at Future Processing",
+      "text": [
+        "I had the pleasure of working with Paweł as his Scrum Master a few years ago. He is a highly engaged and reliable team member who takes real ownership of his work and always makes sure to follow things through to completion. He consistently delivers high-quality work on time and can always be trusted to get things done. It was a real pleasure working with him!"
+      ]
+    },
+    {
+      "name": "Bernie",
+      "author": "Bernie Cook, Head of Development at 10x Psychology",
+      "text": [
+        "Paweł joined 10x in amongst a large development team to build .NET solutions within Azure. Over the course of his 2+ year placement he excelled in delivery, employing his skills and experience on related technologies to deliver solutions within, and outside, these areas, i.e. Angular applications, Azure Data Factory implementations, replication configuration for multiple Azure data repositories - to name a few.",
+        "Paweł was a professional in every sense of the word, and stood apart in his ability to absorb and execute newly acquired knowledge with ease - a key ability when working within the cloud using new and shifting technologies. He worked extremely well under pressure and was very well liked by his colleagues across all the IT teams.",
+        "One aspect of his work mindset that I appreciated was that he would always go that extra step to think of what the business, or I, was going to ask for next, or what would add value that hadn't been previously raised. Having one of the team come to you with these solutions, in a high pressure, tight deadline, environment was always welcomed - and made my job much easier. Thanks Paweł."
       ]
     }
   ]

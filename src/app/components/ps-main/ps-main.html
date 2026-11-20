@@ -10,11 +10,15 @@
           <div>
             <h1 class="hero-name">Paweł&nbsp;Serafin</h1>
             <p class="hero-role">{{ role() }}</p>
+            <ul class="hero-facts" aria-label="Location and work mode">
+              <li><i class="pi pi-map-marker" aria-hidden="true"></i>{{ model().location }}</li>
+              <li><i class="pi pi-briefcase" aria-hidden="true"></i>{{ model().workMode }}</li>
+            </ul>
           </div>
-          <ps-main-summary [data]="model().summary"/>
+          <ps-main-summary [data]="summary()"/>
           <div class="hero-actions flex flex-wrap items-center gap-x-8 gap-y-4">
             <div class="flex items-center gap-2">
-              <span class="hero-label">Contact</span>
+              <span class="hero-label" id="contact-label">Contact</span>
               <ps-main-icons [mode]="1"/>
             </div>
             <div class="flex items-center gap-2">
@@ -22,35 +26,46 @@
               <ps-main-download/>
             </div>
           </div>
+          <!-- Icon links don't print usefully; spell the contact details out on paper -->
+          <p class="print-only hero-print-contact">
+            Pawel.Serafin&#64;gmail.com · linkedin.com/in/paweł-serafin-26ba129a
+          </p>
         </div>
       </div>
     </p-card>
 
     <!-- Left column on 2-col, unwrapped on 1-col -->
     <div class="contents xl:flex xl:flex-col xl:gap-8 min-w-0">
-      <p-card class="section-card w-full min-w-0 order-1" header="Professional Experience">
+      <p-card class="section-card w-full min-w-0 order-1">
+        <ng-template #title><h2>Professional Experience</h2></ng-template>
         <ps-main-stepper [model]="model()"/>
       </p-card>
-      <p-card class="section-card w-full min-w-0 order-3" header="Latest References">
-        <ps-main-references />
+      <p-card class="section-card w-full min-w-0 order-3">
+        <ng-template #title><h2>Latest References</h2></ng-template>
+        <ps-main-references [data]="model().references"/>
       </p-card>
-      <p-card class="section-card w-full min-w-0 order-4" header="Education">
+      <p-card class="section-card w-full min-w-0 order-4">
+        <ng-template #title><h2>Education</h2></ng-template>
         <ps-main-education />
       </p-card>
     </div>
 
     <!-- Right column on 2-col, unwrapped on 1-col -->
     <div class="contents xl:flex xl:flex-col xl:gap-8 min-w-0">
-      <p-card class="section-card w-full min-w-0 order-2" header="Technology Stack">
+      <p-card class="section-card w-full min-w-0 order-2">
+        <ng-template #title><h2>Technology Stack</h2></ng-template>
         <ps-main-technology [technologies]="model().technologies" [skillGroups]="model().skillGroups"/>
       </p-card>
-      <p-card class="section-card w-full min-w-0 order-5" header="Certificates & Courses">
+      <p-card class="section-card w-full min-w-0 order-5">
+        <ng-template #title><h2>Certificates &amp; Courses</h2></ng-template>
         <ps-main-courses [certs]="model().certificates" [courses]="model().courses"/>
       </p-card>
-      <p-card class="section-card w-full min-w-0 order-6" header="Languages">
+      <p-card class="section-card w-full min-w-0 order-6">
+        <ng-template #title><h2>Languages</h2></ng-template>
         <ps-main-languages [data]="model().languages"/>
       </p-card>
-      <p-card class="section-card w-full min-w-0 order-7" header="Passion & Hobbies">
+      <p-card class="section-card w-full min-w-0 order-7">
+        <ng-template #title><h2>Passion &amp; Hobbies</h2></ng-template>
         <ps-main-hobbies [data]="model().passions"/>
       </p-card>
     </div>

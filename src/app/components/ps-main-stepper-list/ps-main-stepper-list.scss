@@ -17,3 +17,35 @@
     font-weight: 600;
   }
 }
+
+/* Print: show every project one after another instead of tabs */
+@media print {
+  :host ::ng-deep {
+    p-tablist,
+    .p-tablist {
+      display: none;
+    }
+    p-tabpanel[hidden],
+    .p-tabpanel[hidden] {
+      display: block !important;
+    }
+    p-tabpanel {
+      display: block;
+    }
+    p-tabpanel + p-tabpanel {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  }
+}
+
+/* Tailwind's preflight hides [hidden] with !important inside @layer base, and layered
+   !important beats unlayered !important - so this override must live in the same layer. */
+@layer base {
+  @media print {
+    :host ::ng-deep p-tabpanel[hidden] {
+      display: block !important;
+    }
+  }
+}

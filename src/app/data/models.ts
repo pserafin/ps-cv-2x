@@ -41,6 +41,11 @@ export class Cv {
   passions: string[];
   technologies: Technology[];
   skillGroups: SkillGroup[];
+  references: Reference[];
+  location: string;
+  workMode: string;
+  /** Public site URL (e.g. https://example.com) - used for absolute social-preview links. */
+  siteUrl: string;
 
   constructor() {
     this.summary = "";
@@ -51,6 +56,10 @@ export class Cv {
     this.passions = [];
     this.technologies = [];
     this.skillGroups = [];
+    this.references = [];
+    this.location = "";
+    this.workMode = "";
+    this.siteUrl = "";
   }
 }
 
@@ -77,4 +86,13 @@ export interface Language {
 export interface SkillGroup {
   name: string;
   items: string[];
+}
+
+export interface Reference {
+  /** Short name shown in the list */
+  name: string;
+  /** Full name and role, e.g. "Jane Doe, Head of Engineering at X" */
+  author: string;
+  /** Paragraphs */
+  text: string[];
 }

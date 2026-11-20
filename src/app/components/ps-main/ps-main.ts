@@ -12,7 +12,16 @@ import { PsMainDownload } from '../ps-main-download/ps-main-download';
 import { PsMainHobbies } from '../ps-main-hobbies/ps-main-hobbies';
 import { PsMainLanguages } from '../ps-main-languages/ps-main-languages';
 import { PsMainIcons } from '../ps-main-icons/ps-main-icons';
+import { applySeo } from '../../seo';
 import cvData from '../../data/data.json';
+
+/** Whole years since the earliest start year found in the experience dates */
+function yearsOfExperience(cv: Cv, now = new Date()): number {
+  const starts = cv.experience
+    .map((e) => parseInt((e.date.match(/\d{4}/) ?? [''])[0], 10))
+    .filter((y) => !Number.isNaN(y));
+  return starts.length ? now.getFullYear() - Math.min(...starts) : 0;
+}
 
 @Component({
   selector: 'ps-main',
@@ -30,4 +39,13 @@ export class PsMain {
   protected readonly languages = computed<Language[]>(() => this.model().languages);
   protected readonly passions = computed<string[]>(() => this.model().passions);
   protected readonly role = computed<string>(() => this.model().experience[0]?.position ?? '');
+  protected readonly years = computed<number>(() => yearsOfExperience(this.model()));
+  /** Summary with the "{years}" token filled in */
+  protected readonly summary = computed<string>(() =>
+    this.model().summary.replace('{years}', String(this.years())),
+  );
+
+  constructor() {
+    applySeo(this.model(), this.years());
+  }
 }

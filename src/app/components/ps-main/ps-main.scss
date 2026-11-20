@@ -51,3 +51,30 @@ footer {
     height: 48px;
   }
 }
+
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--cv-body);
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  i {
+    font-size: 0.85rem;
+    color: var(--cv-accent);
+  }
+}
+
+.hero-print-contact {
+  margin: 0;
+  font-size: 0.9rem;
+}
