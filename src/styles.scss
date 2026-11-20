@@ -45,6 +45,8 @@ body {
   --cv-panel-bg: #fdfeff;
   --cv-page-bg: #ffffff;
   --cv-icon-bg: transparent;
+  --cv-dot: rgba(15, 23, 42, 0.22);
+  --cv-glow: rgba(20, 184, 166, 0.12);
 }
 
 html.dark {
@@ -53,6 +55,8 @@ html.dark {
   --cv-panel-bg: var(--p-surface-800);
   --cv-page-bg: var(--p-surface-950);
   --cv-icon-bg: #f1f5f9;
+  --cv-dot: rgba(255, 255, 255, 0.16);
+  --cv-glow: rgba(45, 212, 191, 0.14);
 }
 
 body {
@@ -77,11 +81,6 @@ html.dark .project-icon {
   background-color: var(--cv-icon-bg);
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
-}
-
-/* The decorative bottom pattern is drawn on white */
-html.dark #bckgrnd {
-  display: none;
 }
 
 /* Soften the photo a touch so it doesn't glare on a dark page */

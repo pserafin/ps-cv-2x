@@ -3,12 +3,27 @@
   pointer-events: none;
 }
 
-svg#bckgrnd {
+.bg-glow,
+.bg-dots {
   position: fixed;
-  bottom: -160px;
-  left: 0;
-  width: 100vw;
-  max-width: 100%;
   pointer-events: none;
   z-index: -10;
+}
+
+/* Soft accent glow behind the header (top-left) */
+.bg-glow {
+  top: -20vh;
+  left: -15vw;
+  width: max(60vw, 480px);
+  height: max(70vh, 480px);
+  background: radial-gradient(closest-side, var(--cv-glow), transparent);
+}
+
+/* Faint dot grid, fading out towards the top of the viewport */
+.bg-dots {
+  inset: 0;
+  background-image: radial-gradient(var(--cv-dot) 1px, transparent 1.6px);
+  background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.6) 25%, transparent 55%);
+  mask-image: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.6) 25%, transparent 55%);
 }
