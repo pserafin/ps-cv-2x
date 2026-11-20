@@ -39,6 +39,8 @@ export class Cv {
   courses: string[];
   languages: Language[];
   passions: string[];
+  technologies: Technology[];
+  skillGroups: SkillGroup[];
 
   constructor() {
     this.summary = "";
@@ -47,11 +49,32 @@ export class Cv {
     this.courses = [];
     this.languages = [];
     this.passions = [];
+    this.technologies = [];
+    this.skillGroups = [];
   }
+}
+
+export interface Technology {
+  name: string;
+  category: string;
+  /** File name in public/icons */
+  icon?: string;
+  /** PrimeIcons class used when there is no icon file, e.g. "pi-cloud" */
+  pi?: string;
+  /** Colour for the PrimeIcons fallback */
+  color?: string;
+  /** Shown in the large "core" row */
+  core?: boolean;
 }
 
 export interface Language {
   name: string,
   level: string,
   icon: string
+}
+
+/** Text-only skill group, e.g. "Practices & Patterns" */
+export interface SkillGroup {
+  name: string;
+  items: string[];
 }

@@ -1,9 +1,7 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { Card } from 'primeng/card';
-import { PsMainIconsWrap } from '../ps-main-icons-wrap/ps-main-icons-wrap';
 
+/** Contact links (mode 1). The technology stack is rendered by ps-main-technology. */
 @Component({
-  imports: [Card, PsMainIconsWrap],
   selector: 'ps-main-icons',
   styleUrl: './ps-main-icons.scss',
   templateUrl: './ps-main-icons.html',

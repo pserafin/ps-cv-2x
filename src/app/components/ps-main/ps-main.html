@@ -42,7 +42,7 @@
     <!-- Right column on 2-col, unwrapped on 1-col -->
     <div class="contents xl:flex xl:flex-col xl:gap-8 min-w-0">
       <p-card class="section-card w-full min-w-0 order-2" header="Technology Stack">
-        <ps-main-technology/>
+        <ps-main-technology [technologies]="model().technologies" [skillGroups]="model().skillGroups"/>
       </p-card>
       <p-card class="section-card w-full min-w-0 order-5" header="Certificates & Courses">
         <ps-main-courses [certs]="model().certificates" [courses]="model().courses"/>

@@ -24,7 +24,7 @@
             "Preparing documentation",
             "Analysing existing customer applications"
           ],
-          "technology" : "C#, .NET (6.0), Snowflake, MSSQL, IaC: Terraform + CI/CD with DevOps, Azure hosted ( Data Factory + SHIR, Service Bus, Function App, VNET integration, NoSQL (Storage Account), APIM, Front Door, OAuth2 + Azure AD), small episode with Angular 6 "
+          "technology" : "C#, .NET (6.0), Snowflake, MSSQL, IaC: Terraform + CI/CD with DevOps, Azure hosted ( Data Factory + SHIR, Service Bus, Function App, VNET integration, NoSQL (Storage Account), APIM, Front Door, OAuth2 + Azure AD), small episode with Angular"
         },
         {
           "name": "Special Risk",
@@ -64,7 +64,7 @@
             "Managing user accounts (Azure AD, OAuth2, OpenID Connect, Graph API)",
             "Creating a deterministic indexing mechanism for SharePoint documents"
           ],
-          "technology" : "C#, .NET (10.0), Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool)"
+          "technology" : "C#, .NET (10.0), Entity Framework, Dapper, Docker, Blazor Server, Azure (Function App, Service Bus, APIM, Key Vault, Front Door, VNET integration, Azure AD, Graph API), MSSQL, SharePoint (Graph API), OpenXml (preparing reporting tool)"
         }
       ]
     },
@@ -362,5 +362,102 @@
     "Family - in the past, work and programming were my biggest passion, but nowadays my biggest passion and love is my family, which fills every free moment I have",
     "Volleyball - I guess it's the last activity I can afford to make time for (because of my family).",
     "Sense of humour - it's always good to brighten up the working day a little"
+  ],
+  "technologies": [
+    {"name":"C#","category":"Backend","icon":"csharp.svg","core":true},
+    {"name":".NET","category":"Backend","icon":"net-10.svg","core":true},
+    {"name":"ASP.NET","category":"Backend","icon":"asp-net.svg","core":true},
+    {"name":"Azure","category":"Cloud & DevOps","core":true,"pi":"pi-cloud","color":"#0078D4"},
+    {"name":"SQL Server","category":"Data","icon":"microsoft-sql.svg","core":true},
+    {"name":"Angular","category":"Frontend","icon":"angular.svg","core":true},
+    {"name":"TypeScript","category":"Frontend","icon":"type-script.svg","core":true},
+    {"name":".NET Framework","category":"Backend","icon":"net-framework-4-8.svg"},
+    {"name":"ASP.NET MVC / Razor","category":"Backend"},
+    {"name":"Entity Framework","category":"Backend","icon":"entity-framework.svg"},
+    {"name":"Dapper","category":"Backend","icon":"dapper.svg"},
+    {"name":"SignalR","category":"Backend","icon":"signalr.svg"},
+    {"name":"MediatR","category":"Backend","icon":"mediator.svg"},
+    {"name":"Open XML","category":"Backend","icon":"open-xml.svg"},
+    {"name":"JSON","category":"Backend","icon":"json.svg"},
+    {"name":"XML","category":"Backend"},
+    {"name":"JavaScript","category":"Frontend","icon":"java-script.svg"},
+    {"name":"HTML","category":"Frontend","icon":"html.svg"},
+    {"name":"CSS / SCSS","category":"Frontend","icon":"css.svg"},
+    {"name":"Bootstrap","category":"Frontend"},
+    {"name":"jQuery","category":"Frontend","icon":"jquery.svg"},
+    {"name":"Angular Material","category":"Frontend","icon":"angular-material.svg"},
+    {"name":"PrimeNG","category":"Frontend","icon":"primeng.svg"},
+    {"name":"RxJS","category":"Frontend","icon":"rxjs.svg"},
+    {"name":"NgRx","category":"Frontend","icon":"ngrx.svg"},
+    {"name":"Blazor","category":"Frontend","icon":"blazor.svg"},
+    {"name":"Entra ID","category":"Cloud & DevOps","icon":"entra-ad.svg"},
+    {"name":"OAuth2","category":"Cloud & DevOps"},
+    {"name":"App Service","category":"Cloud & DevOps","icon":"app-service.svg"},
+    {"name":"Azure Functions","category":"Cloud & DevOps","icon":"function-app.svg"},
+    {"name":"Logic Apps","category":"Cloud & DevOps"},
+    {"name":"Container Apps","category":"Cloud & DevOps","icon":"container-app.svg"},
+    {"name":"Application Insights","category":"Observability","icon":"app-insights.svg"},
+    {"name":"Front Door","category":"Cloud & DevOps","icon":"front-door.svg"},
+    {"name":"API Management","category":"Cloud & DevOps","icon":"apim.svg"},
+    {"name":"Data Factory","category":"Cloud & DevOps","icon":"data-factory.svg"},
+    {"name":"Service Bus","category":"Cloud & DevOps","icon":"service-bus.svg"},
+    {"name":"VNet","category":"Cloud & DevOps","icon":"vnet.svg"},
+    {"name":"Key Vault","category":"Cloud & DevOps","icon":"key-vault.svg"},
+    {"name":"Azure DevOps","category":"Cloud & DevOps","icon":"azure-devops.svg"},
+    {"name":"ARM Templates","category":"Cloud & DevOps","icon":"arm-template.svg"},
+    {"name":"Terraform","category":"Cloud & DevOps","icon":"terraform.svg"},
+    {"name":"CI/CD","category":"Cloud & DevOps","icon":"ci-cd.svg"},
+    {"name":"Docker / Containers","category":"Cloud & DevOps","icon":"containers.svg"},
+    {"name":"Microsoft Graph","category":"Cloud & DevOps","icon":"graph-api.svg"},
+    {"name":"SharePoint Online","category":"Cloud & DevOps","icon":"sharepoint-online.svg"},
+    {"name":"New Relic","category":"Observability","icon":"new-relic.svg"},
+    {"name":"T-SQL / Query Optimisation","category":"Data"},
+    {"name":"Azure SQL","category":"Data","icon":"azure-sql.svg"},
+    {"name":"Azure Table Storage","category":"Data","icon":"azure-table.svg"},
+    {"name":"Azure Blob Storage","category":"Data","icon":"azure-blob-storage.svg"},
+    {"name":"NoSQL","category":"Data","icon":"nosql.svg"},
+    {"name":"Snowflake","category":"Data","icon":"snowflake.svg"},
+    {"name":"Claude","category":"AI & Testing","icon":"claude.svg"},
+    {"name":"Antigravity","category":"AI & Testing","icon":"antigravity.svg"},
+    {"name":"xUnit","category":"AI & Testing","icon":"xunit.svg"},
+    {"name":"AutoFixture","category":"AI & Testing","icon":"autofixture.svg"},
+    {"name":"Moq","category":"AI & Testing","icon":"moq.svg"},
+    {"name":"Serilog","category":"Observability"},
+    {"name":"NLog","category":"Observability"},
+    {"name":"Git","category":"Workflow & APIs"},
+    {"name":"GitHub","category":"Workflow & APIs"},
+    {"name":"Jira","category":"Workflow & APIs"},
+    {"name":"Agile / Scrum","category":"Workflow & APIs"},
+    {"name":"Swagger / OpenAPI","category":"Workflow & APIs"},
+    {"name":"Postman","category":"Workflow & APIs"}
+  ],
+  "skillGroups": [
+    {
+      "name": "Practices & Patterns",
+      "items": [
+        "Clean Architecture",
+        "Domain-Driven Design",
+        "CQRS",
+        "Event-Driven Architecture",
+        "Microservices",
+        "SOA",
+        "N-Layer",
+        "REST API",
+        "SPA",
+        "SOLID",
+        "KISS / DRY / YAGNI"
+      ]
+    },
+    {
+      "name": "Leadership & Delivery",
+      "items": [
+        "Solution Architecture",
+        "Team Leadership",
+        "Business Analysis",
+        "Technical Documentation",
+        "Code Review",
+        "Mentoring"
+      ]
+    }
   ]
 }

@@ -11,6 +11,7 @@ describe('PsMainTechnology', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(PsMainTechnology);
+    fixture.componentRef.setInput('technologies', [{ name: 'C#', category: 'Backend', core: true }]);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

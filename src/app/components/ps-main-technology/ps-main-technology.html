@@ -1,1 +1,51 @@
-<ps-main-icons [mode]="2"/>
+<!-- Core skills: large tiles -->
+<ul class="core-grid" aria-label="Core technologies">
+  @for (t of core(); track t.name) {
+    <li class="core-item">
+      <span class="logo logo-lg">
+        @if (t.icon) {
+          <img [src]="'icons/' + t.icon" alt="" width="44" height="44" loading="lazy" />
+        } @else {
+          <i class="pi {{ t.pi }}" [style.color]="t.color" aria-hidden="true"></i>
+        }
+      </span>
+      <span class="core-name">{{ t.name }}</span>
+    </li>
+  }
+</ul>
+
+<!-- Everything else: compact chips grouped by category -->
+<div class="groups">
+  @for (g of groups(); track g.name) {
+    <div class="group">
+      <h4 class="group-title">{{ g.name }}</h4>
+      <ul class="chips">
+        @for (t of g.items; track t.name) {
+          <li class="chip" [class.chip-text]="!t.icon && !t.pi">
+            @if (t.icon) {
+              <span class="logo">
+                <img [src]="'icons/' + t.icon" alt="" width="22" height="22" loading="lazy" />
+              </span>
+            } @else if (t.pi) {
+              <span class="logo">
+                <i class="pi {{ t.pi }}" [style.color]="t.color" aria-hidden="true"></i>
+              </span>
+            }
+            {{ t.name }}
+          </li>
+        }
+      </ul>
+    </div>
+  }
+
+  @for (sg of skillGroups(); track sg.name) {
+    <div class="group">
+      <h4 class="group-title">{{ sg.name }}</h4>
+      <ul class="chips">
+        @for (p of sg.items; track p) {
+          <li class="chip chip-text">{{ p }}</li>
+        }
+      </ul>
+    </div>
+  }
+</div>
