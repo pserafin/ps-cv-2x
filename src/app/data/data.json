@@ -337,20 +337,21 @@
 
   ],
   "certificates": [
-    "Project management – Prince 2",
-    "MS-10262 Developing Windows Applications with Microsoft Visual Studio 2010 [WPF, ASP.NET]",
+    "Project management - Prince 2",
+    "MS-10262 Developing Windows Applications [WPF, ASP.NET]",
     "TELC Certificate in English B1"
   ],
   "courses": [
     "AZ-204 (Developing Solutions for Microsoft Azure)",
     "AZ-300 (Microsoft Azure Architect Technologies)",
     "AZ-301 (Microsoft Azure Architect Design)",
-    "Generative AI for .NET Developers with Google AI",
+    "Generative AI for .NET (Google AI)",
+    "AI & LLM Integration (inc. vectors/embedding)",
     "Advanced MS SQL",
     "T-SQL tuning and performance",
     "Kubernetes",
-    "Advanced Angular 7",
-    "C# Programming (.NET 4.0/4.5, Silverlight, WCF)",
+    "Advanced Angular",
+    "C# Programming",
     "Design patterns in C",
     "Domain-Driven Design",
     "Advanced JavaScript",
