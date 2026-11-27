@@ -6,6 +6,30 @@
   "experience": [
 
     {
+      "company": "NDA (non-disclosure agreement)",
+      "icon": 6,
+      "seniority": "ongoing",
+      "date": "2026",
+      "position": "SENIOR FULLSTACK DEVELOPER",
+      "projects": [
+        {
+          "name": "Frontend Migration",
+          "displayName": "Frontend Migration",
+          "description": [
+            "Migrating the frontend from Blazor Server to Angular"
+          ],
+          "tasks": [
+            "Planning the migration strategy and the target frontend architecture",
+            "Rebuilding UI components and pages in Angular [with PrimeNG], preserving existing functionality",
+            "Integrating authentication with Microsoft Entra ID (MSAL, OAuth2/OpenID Connect)",
+            "Working with business analysts to validate feature parity"
+          ],
+          "technology" : "Angular@21, TypeScript, RxJS, PrimeNG@21, HTML, SCSS, Entra ID, MSAL, Azure Static Web Apps, Git deployment"
+        }
+      ]
+    },
+
+    {
       "company": "Shimi",
       "icon": 5,
       "seniority": "> 4 year",
